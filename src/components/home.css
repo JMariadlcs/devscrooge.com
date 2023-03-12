@@ -1688,6 +1688,7 @@ h3.comment-reply-title:before {
 
 .home-principal-container {
   display: flex;
+  width: auto;
 }
 
 .home-buttons {
@@ -1881,6 +1882,7 @@ ul.social-links li:last-child a {
   display: flex;
   margin-right: -15px;
   margin-left: -15px;
+  width: 100%;
 }
 
 .info-block-w-icon .ci-text h4 {

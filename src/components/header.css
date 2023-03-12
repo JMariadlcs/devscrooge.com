@@ -7,6 +7,7 @@
   padding: 10px;
   margin-bottom: 40px;
   padding-top: 20px;
+  width: 100%;
 }
 
 .text-logo {
@@ -15,4 +16,13 @@
 
 .leven-classNameic-menu site-main-menu {
   margin-rigth: 20px;
+}
+
+.active {
+  font-weight: bold;
+  color: #0085ff !important;
+}
+
+.site-header {
+  width: 100%;
 }
