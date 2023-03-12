@@ -176,9 +176,7 @@ export const Home = () => {
                                             <li class="fw-default-row">Preliminary architecture design of Smart Contracts</li>
                                             <div class="fw-default-row"></div>
 
-                                            <div className='price-div'>
-                                                <span className="price">50 USD</span>
-                                            </div>
+
 
                                         </div>
                                     </div>
