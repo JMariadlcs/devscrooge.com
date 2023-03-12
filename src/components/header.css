@@ -8,6 +8,7 @@
   margin-bottom: 40px;
   padding-top: 20px;
   width: 100%;
+  word-wrap: break-word;
 }
 
 .text-logo {
@@ -16,6 +17,8 @@
 
 .leven-classNameic-menu site-main-menu {
   margin-rigth: 20px;
+  word-wrap: break-word;
+  display: flex;
 }
 
 .active {
@@ -24,5 +27,5 @@
 }
 
 .site-header {
-  width: 100%;
+  width: auto;
 }

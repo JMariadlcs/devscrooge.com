@@ -10,7 +10,9 @@
 }
 
 .question-contact {
-  margin-left: 300px;
+  display: flex;
+  margin-left: 130px;
+  margin-right: 300px;
 }
 
 .contact-sidebar {
