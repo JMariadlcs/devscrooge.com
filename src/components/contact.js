@@ -4,7 +4,7 @@ import { LinkedIn, Twitter, Mail } from '@mui/icons-material';
 const ContactPage = () => {
 
     const TitleBox = styled(Box)(({ theme }) => ({
-        backgroundColor: '#252525',
+        backgroundColor: '#2b2b2b',
         color: '#FFFFFF',
         paddingLeft: theme.spacing(10),
         paddingRight: theme.spacing(2),
@@ -119,7 +119,14 @@ const ContactPage = () => {
                 </Box>
                 <Button
                     variant="contained"
-                    sx={{ mt: 3, backgroundColor: '#c9c7c7', color: '#1B7BEC' }}
+                    sx={{
+                        color: 'white',
+                        backgroundColor: '#424242',
+                        border: 2,
+                        borderColor: '#1B7BEC',
+                        borderRadius: '20px',
+                        margin: '30px'
+                    }}
                     href="mailto:0xdevscrooge@gmail.com"
                 >
                     Send message

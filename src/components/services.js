@@ -55,7 +55,7 @@ const ServicesPage = () => {
     }));
 
     const TitleBox = styled(Box)(({ theme }) => ({
-        backgroundColor: '#252525',
+        backgroundColor: '#2b2b2b',
         color: '#FFFFFF',
         paddingLeft: theme.spacing(10),
         paddingRight: theme.spacing(2),
