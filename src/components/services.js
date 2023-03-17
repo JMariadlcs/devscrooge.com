@@ -1,138 +1,237 @@
-import './services.css'
-
-export const Services = () => {
-    return (
-        <div className="services">
-            <div id="main" class="site-main">
-                <div id="main-content" class="single-page-content">
-                    <div id="primary" class="content-area">
-
-                        {/* Services Title */}
-                        <div class="page-title">
-                            <div class="services-header">
-                                <h1>Services</h1>
-                                <div class="page-subtitle">
-                                    <h4> 4 different services</h4>
-                                </div>
-                                <div class="cool-xs-12">
-                                    <p>The prices for all services are custom-designed in a specialized way for each project depending on its size and complexity. A quotation will be given after contact.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="content" class="page-content site-content single-post" role="main">
-                            <div class="row">
+import { Box, Typography, styled, Divider, Button, makeStyles } from "@mui/material"
+import { useTheme } from '@mui/material/styles';
+import useMediaQuery from '@mui/material/useMediaQuery';
 
 
 
+const ServicesPage = () => {
+    const theme = useTheme();
+    const isXlScreen = useMediaQuery(theme.breakpoints.up('xl'));
 
-                                {/* Services */}
-                                <div class="row">
-                                    <div class="col-xs-12 col-sm-12">
-                                        <div class="block-title">
-                                            <h2>Hire</h2>
-                                        </div>
-                                    </div>
-                                </div>
+    const StyledBox = styled(Box)(({ theme }) => ({
+        display: 'flex',
+        [theme.breakpoints.down('sm')]: {
+            flexDirection: 'column',
+            padding: '50px'
+        },
+        [theme.breakpoints.down('lg')]: {
+            flexDirection: 'column',
+            padding: '50'
+        },
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        padding: '0px 200px 50px 200px',
+        flexWrap: 'wrap',
+        margin: '0'
+    }));
 
-                                <div class="row">
-                                    <div className="services-page">
-                                        <div class="col-xs-12 col-sm-12">
-                                            <div class="fw-pricing clearfix row">
+    const HireBox = styled(Box)(({ theme }) => ({
+        alignItems: 'center',
+        backgroundColor: 'secondary.main',
+        borderRadius: 2,
+        border: '1px solid rgba(255, 255, 255, 0.2)',
+        boxShadow: '0px 0px 20px 1px rgba(255, 255, 255, 0.2)',
+        flexGrow: '0',
+        flexDirection: 'column',
+        margin: '50px -20px 10px 0px', // Decreased margin here
+        height: '470px',
+        maxWidth: '30%',
+        padding: isXlScreen ? '0 100px' : ' 0 50px',
+        width: '100%',
+        borderRadius: 10,
+        [theme.breakpoints.down('lg')]: {
+            flexDirection: 'column',
+            height: 'fit-content',
+            margin: '50px 0px 10px 0px',
+            padding: '0 20px 20px 20px',
+            maxWidth: '80%',
+            width: '500px',
+        },
+        '&:hover': {
+            boxShadow: '0px 0px 30px 3px rgba(255, 255, 255, 0.3)',
+            transform: 'translateY(-5px)',
+        },
+    }));
 
-                                                <div class="fw-package-wrap col-md-6 col-xl-4 highlight-col">
-                                                    <div class="fw-package">
+    const TitleBox = styled(Box)(({ theme }) => ({
+        backgroundColor: '#252525',
+        color: '#FFFFFF',
+        paddingLeft: theme.spacing(10),
+        paddingRight: theme.spacing(2),
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        height: '200px', // set the height to be larger than text height
+        margin: '50px 0 0 0'
+    }));
 
-                                                        <div class="fw-pricing-row">
-                                                            <span>Consulting</span>
-                                                        </div>
+    const TitleTypography = styled(Typography)(({ theme }) => ({
+        fontWeight: 'bold',
+        marginBottom: theme.spacing(2),
+        marginTop: theme.spacing(2),
+        textAlign: 'left',
+    }));
 
-                                                        <div class="fw-button-row">
-                                                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSees9RL4-zXmWkWsY_tZ4-52JL1AoGjYH_1ajjuizNDV5PFdg/viewform?usp=sf_link" target="_blank" class="btn btn-primary"
-                                                            >Hire</a>
-                                                        </div>
+    const TitleDivider = styled(Box)(({ theme }) => ({
+        backgroundColor: '#252525',
+        borderBottom: `1px solid ${theme.palette.divider}`,
+        marginBottom: theme.spacing(2),
+        marginTop: theme.spacing(2),
+    }));
 
-                                                        <li class="fw-default-row">1 to 1 call</li>
-                                                        <li class="fw-default-row">Solving doubts about technical implementation</li>
-                                                        <li class="fw-default-row">Information on which Smart Contracts are required</li>
-                                                        <li class="fw-default-row">Preliminary architecture design of Smart Contracts</li>
-                                                        <div class="fw-default-row"></div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="fw-package-wrap col-md-6 col-xl-4 highlight-col">
-                                                    <div class="fw-package">
-
-
-                                                        <div class="fw-pricing-row">
-                                                            <span>Simple Audit</span>
-                                                        </div>
-
-                                                        <div class="fw-button-row">
-                                                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSees9RL4-zXmWkWsY_tZ4-52JL1AoGjYH_1ajjuizNDV5PFdg/viewform?usp=sf_link" target="_blank" class="btn btn-primary"
-                                                            >Hire</a>
-                                                        </div>
-
-                                                        <li class="fw-default-row">Code review</li>
-                                                        <li class="fw-default-row">Shallow search for vulnerability detection</li>
-                                                        <li class="fw-default-row">Tips on improving code efficiency</li>
-                                                        <li class="fw-default-row">Report on the above points and how to solve them</li>
-                                                        <div class="fw-default-row"></div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="fw-package-wrap col-md-6 col-xl-4 highlight-col">
-                                                    <div class="fw-package">
-
-
-                                                        <div class="fw-pricing-row">
-                                                            <span>Complex Audit</span>
-                                                        </div>
-
-                                                        <div class="fw-button-row">
-                                                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSees9RL4-zXmWkWsY_tZ4-52JL1AoGjYH_1ajjuizNDV5PFdg/viewform?usp=sf_link" target="_blank" class="btn btn-primary"
-                                                            >Hire</a>
-                                                        </div>
-
-                                                        <li class="fw-default-row">Code review</li>
-                                                        <li class="fw-default-row">Deep search for vulnerability detection</li>
-                                                        <li class="fw-default-row">Testing with personalized scripts</li>
-                                                        <li class="fw-default-row">Tips on improving code efficiency</li>
-                                                        <li class="fw-default-row">Report on detected vulnerabilities classified on low, medium and high severity</li>
-                                                        <li class="fw-default-row">Report on the above points and how to solve them</li>
-                                                    </div>
-                                                </div>
-
-                                                <div class="fw-package-wrap col-md-6 col-xl-4 highlight-col">
-                                                    <div class="fw-package">
-
-                                                        <div class="fw-pricing-row">
-                                                            <span>Smart Contracts Development</span>
-                                                        </div>
-
-                                                        <div class="fw-button-row">
-                                                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSees9RL4-zXmWkWsY_tZ4-52JL1AoGjYH_1ajjuizNDV5PFdg/viewform?usp=sf_link" target="_blank" class="btn btn-primary"
-                                                            >Hire</a >
-                                                        </div>
-
-                                                        <li class="fw-default-row">Personalized development environment</li>
-                                                        <li class="fw-default-row">Development of the needed Smart Contracts</li>
-                                                        <li class="fw-default-row">Development of the needed scripts to support the Smart Contract</li>
-                                                        <li class="fw-default-row">Unit testing for the Smart Contract</li>
-                                                        <li class="fw-default-row">Deployment scripts</li>
-                                                        <li class="fw-default-row">Smart Contract deployment</li>
-                                                        <div class="fw-default-row"></div>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    const ServiceTitle = () => {
+        return (
+            <div className="servicesTittle" sx={{ margin: '50px 0 0 0' }}>
+                <TitleDivider />
+                <TitleBox>
+                    <TitleTypography variant="h4" component="h1">
+                        Services
+                    </TitleTypography>
+                    <Typography variant="body1">
+                        The prices for all services are custom-designed in a specialized way
+                        for each project depending on its size and complexity. A quotation
+                        will be given after contact.
+                    </Typography>
+                </TitleBox>
+                <TitleDivider />
             </div>
-        </div>
+        );
+    };
+
+
+    return (
+        <Box className="home-box" sx={{ backgroundColor: 'primary.main' }} margin="-25px 0 0 0">
+            <ServiceTitle />
+            <StyledBox className="home-hire-box" margin="20px 0 100px 0" padding="0px 200px">
+                <HireBox className="home-hire-consulting-box">
+                    <Typography variant="h5" component="h2" gutterBottom color="textSecondary" margin='30px 0 20px 0' align="center" alignSelf="center" fontWeight='bold'>
+                        Consulting
+                    </Typography>
+                    <Box sx={{ display: 'flex', alignItems: 'center', flexDirection: 'column' }}>
+                        <Button variant="contained" href={"buttonLink"} s sx={{
+                            borderRadius: 2,
+                            border: '1px solid rgba(27, 123, 236, 1)',
+                            boxShadow: '0px 0px 20px 1px rgba(255, 255, 255, 0.2)',
+                        }}>
+                            Hire
+                        </Button>
+                        <Box sx={{ ml: 2 }} >
+                            <Typography color="textPrimary" variant="body1" component="p" gutterBottom margin="20px 0 10px 0">
+                                <span style={{ color: 'white' }}>&bull;</span> 1 to 1 call
+                            </Typography>
+                            <Typography color="textPrimary" variant="body1" component="p" gutterBottom margin="0 0 10px 0">
+                                <span style={{ color: 'white' }}>&bull;</span> Solving doubts about technical implementation
+                            </Typography>
+                            <Typography color="textPrimary" variant="body1" component="p" gutterBottom margin="0 0 10px 0">
+                                <span style={{ color: 'white' }}>&bull;</span> Information on which Smart Contracts are required
+                            </Typography>
+                            <Typography color="textPrimary" variant="body1" component="p" gutterBottom margin="0 0 10px 0">
+                                <span style={{ color: 'white' }}>&bull;</span> Preliminary architecture design of Smart Contracts
+                            </Typography>
+                        </Box>
+                    </Box>
+                </HireBox>
+
+                <HireBox className="home-hire-simpleAudit-box">
+                    <Typography variant="h5" component="h2" gutterBottom color="textSecondary" margin='30px 0 20px 0' align="center" alignSelf="center" fontWeight='bold'>
+                        Smart Contracts Development
+                    </Typography>
+                    <Box sx={{ display: 'flex', alignItems: 'center', flexDirection: 'column' }}>
+                        <Button variant="contained" href={"buttonLink"} s sx={{
+                            borderRadius: 2,
+                            border: '1px solid rgba(27, 123, 236, 1)',
+                            boxShadow: '0px 0px 20px 1px rgba(255, 255, 255, 0.2)',
+                        }}>
+                            Hire
+                        </Button>
+                        <Box sx={{ ml: 2 }} >
+                            <Typography color="textPrimary" variant="body1" component="p" gutterBottom margin="20px 0 10px 0">
+                                <span style={{ color: 'white' }}>&bull;</span> Personalized development environment
+                            </Typography>
+                            <Typography color="textPrimary" variant="body1" component="p" gutterBottom margin="0 0 10px 0">
+                                <span style={{ color: 'white' }}>&bull;</span> Development of the needed Smart Contracts
+                            </Typography>
+                            <Typography color="textPrimary" variant="body1" component="p" gutterBottom margin="0 0 10px 0">
+                                <span style={{ color: 'white' }}>&bull;</span> Development of the needed scripts to support the Smart Contract
+                            </Typography>
+                            <Typography color="textPrimary" variant="body1" component="p" gutterBottom margin="0 0 10px 0">
+                                <span style={{ color: 'white' }}>&bull;</span> Unit testing for the Smart Contract
+                            </Typography>
+                            <Typography color="textPrimary" variant="body1" component="p" gutterBottom margin="0 0 10px 0">
+                                <span style={{ color: 'white' }}>&bull;</span> Deployment scripts
+                            </Typography>
+                            <Typography color="textPrimary" variant="body1" component="p" gutterBottom margin="0 0 10px 0">
+                                <span style={{ color: 'white' }}>&bull;</span> Smart Contract deployment
+                            </Typography>
+                        </Box>
+                    </Box>
+                </HireBox>
+
+
+                <HireBox className="home-hire-simpleAudit-box">
+                    <Typography variant="h5" component="h2" gutterBottom color="textSecondary" margin='50px 0 20px 0' align="center" alignSelf="center" fontWeight='bold'>
+                        Simple Audit
+                    </Typography>
+                    <Box sx={{ display: 'flex', alignItems: 'center', flexDirection: 'column' }}>
+                        <Button variant="contained" href={"buttonLink"} s sx={{
+                            borderRadius: 2,
+                            border: '1px solid rgba(27, 123, 236, 1)',
+                            boxShadow: '0px 0px 20px 1px rgba(255, 255, 255, 0.2)',
+                        }}>
+                            Hire
+                        </Button>
+                        <Box sx={{ ml: 2 }} >
+                            <Typography color="textPrimary" variant="body1" component="p" gutterBottom margin="20px 0 10px 0">
+                                <span style={{ color: 'white' }}>&bull;</span> Code review
+                            </Typography>
+                            <Typography color="textPrimary" variant="body1" component="p" gutterBottom margin="0 0 10px 0">
+                                <span style={{ color: 'white' }}>&bull;</span> Shallow search for vulnerability detection
+                            </Typography>
+                            <Typography color="textPrimary" variant="body1" component="p" gutterBottom margin="0 0 10px 0">
+                                <span style={{ color: 'white' }}>&bull;</span> Tips on improving code efficiency
+                            </Typography>
+                            <Typography color="textPrimary" variant="body1" component="p" gutterBottom margin="0 0 10px 0">
+                                <span style={{ color: 'white' }}>&bull;</span> Report on the above points and how to solve them
+                            </Typography>
+                        </Box>
+                    </Box>
+                </HireBox>
+
+                <HireBox className="home-hire-simpleAudit-box" >
+                    <Typography variant="h5" component="h2" gutterBottom color="textSecondary" margin='50px 0 20px 0' align="center" alignSelf="center" fontWeight='bold'>
+                        Complex Audit
+                    </Typography>
+                    <Box sx={{ display: 'flex', alignItems: 'center', flexDirection: 'column' }}>
+                        <Button variant="contained" href={"buttonLink"} s sx={{
+                            borderRadius: 2,
+                            border: '1px solid rgba(27, 123, 236, 1)',
+                            boxShadow: '0px 0px 20px 1px rgba(255, 255, 255, 0.2)',
+                        }}>
+                            Hire
+                        </Button>
+                        <Box sx={{ ml: 2 }} >
+                            <Typography color="textPrimary" variant="body1" component="p" gutterBottom margin="20px 0 10px 0">
+                                <span style={{ color: 'white' }}>&bull;</span> Code review
+                            </Typography>
+                            <Typography color="textPrimary" variant="body1" component="p" gutterBottom margin="0 0 10px 0">
+                                <span style={{ color: 'white' }}>&bull;</span> Deep search for vulnerability detection
+                            </Typography>
+                            <Typography color="textPrimary" variant="body1" component="p" gutterBottom margin="0 0 10px 0">
+                                <span style={{ color: 'white' }}>&bull;</span> Testing with personalized scripts
+                            </Typography>
+                            <Typography color="textPrimary" variant="body1" component="p" gutterBottom margin="0 0 10px 0">
+                                <span style={{ color: 'white' }}>&bull;</span> Report on detected vulnerabilities classified on low, medium and high severity
+                            </Typography>
+                            <Typography color="textPrimary" variant="body1" component="p" gutterBottom margin="0 0 10px 0">
+                                <span style={{ color: 'white' }}>&bull;</span> Report on the above points and how to solve them
+                            </Typography>
+                        </Box>
+                    </Box>
+                </HireBox>
+            </StyledBox>
+        </Box>
     )
 }
+
+export default ServicesPage

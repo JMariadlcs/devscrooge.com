@@ -1,27 +1,41 @@
-export const Footer = () => {
+import { Box, Typography } from '@mui/material';
+import { LinkedIn, Twitter, GitHub, Mail } from '@mui/icons-material';
+
+const Footer = () => {
     return (
-        <div className="footer">
-            {/* Footer */}
-            <footer class="site-footer clearfix">
-                <div class="footer-social">
-                    <ul class="footer-social-links">
-                        <li>
-                            <a href="https://www.linkedin.com/in/jmariadlcs/" target="_blank">LinkedIn</a>
-                        </li>
-                        <li>
-                            <a href="https://twitter.com/devScrooge" target="_blank">Twitter</a>
-                        </li>
+        <Box sx={{
+            bgcolor: '#222222',
+            boxShadow: '0px -5px 5px rgba(0, 0, 0, 0.2)',
+            py: 3,
+            px: 2,
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            flexDirection: 'column',
+        }}>
+            <Typography variant="body2" sx={{ color: 'white' }}>
+                Connect with me on:
+            </Typography>
+            <Box sx={{ mt: 1 }}>
+                <LinkedIn
+                    sx={{ mr: 1, cursor: 'pointer', color: 'white' }}
+                    onClick={() => window.open('https://www.linkedin.com/in/jmariadlcs')}
+                />
+                <Twitter
+                    sx={{ mr: 1, cursor: 'pointer', color: 'white' }}
+                    onClick={() => window.open('https://twitter.com/devscrooge')}
+                />
+                <GitHub
+                    sx={{ mr: 1, cursor: 'pointer', color: 'white' }}
+                    onClick={() => window.open('https://github.com/jmariadlcs')}
+                />
+                <Mail
+                    sx={{ cursor: 'pointer', color: 'white' }}
+                    onClick={() => window.open('mailto:0xdevscrooge@gmail.com')}
+                />
+            </Box>
+        </Box>
+    );
+};
 
-                        <li>
-                            <a href="https://github.com/JMariadlcs" target="_blank">Github</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="footer-copyrights">
-                    <p>© 2023 All rights reserved.</p>
-                </div>
-            </footer>
-        </div>
-    )
-}
+export default Footer;

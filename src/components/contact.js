@@ -1,84 +1,132 @@
-import './contact.css'
+import { Box, Typography, Link, Button, styled } from '@mui/material';
+import { LinkedIn, Twitter, Mail } from '@mui/icons-material';
 
-export const Contact = () => {
-    return (
-        <>
-            <div id="main" class="site-main">
-                <div id="main-content" class="single-page-content">
-                    <div id="primary" class="content-area">
-                        <div class="page-title">
-                            <div class="contact-header">
-                                <h1>Contact</h1>
-                                <div class="page-subtitle">
-                                    <h4>Contact me</h4>
-                                </div>
-                            </div>
-                        </div>
+const ContactPage = () => {
 
-                        <div
-                            id="content"
-                            class="page-content site-content single-post"
-                            role="main"
-                        >
-                            <div class="row">
-                                <div class="col-xs-12 col-sm-4">
-                                    <div className='contact-sidebar'>
-                                        <div id="info_list_1" class="info-list-w-icon">
-                                            <div class="info-block-w-icon">
-                                                <div class="ci-icon">
-                                                    <i class="linecons linecons-phone"></i>
-                                                </div>
-                                                <div class="ci-text">
-                                                    <a href="https://www.linkedin.com/in/jmariadlcs/" target="_blank">
-                                                        LinkedIn
-                                                    </a>
-                                                    <p className="contact-text">You can contact me on LinkedIn</p>
-                                                </div>
-                                            </div>
+    const TitleBox = styled(Box)(({ theme }) => ({
+        backgroundColor: '#252525',
+        color: '#FFFFFF',
+        paddingLeft: theme.spacing(10),
+        paddingRight: theme.spacing(2),
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        height: '200px', // set the height to be larger than text height
+        margin: '50px 0 0 0'
+    }));
 
-                                            <div class="info-block-w-icon">
-                                                <div class="ci-icon">
-                                                    <i class="linecons linecons-location"></i>
-                                                </div>
-                                                <div class="ci-text">
-                                                    <a href="https://twitter.com/devscrooge" target="_blank">@devScrooge</a>
-                                                    <p className="contact-text">You can contact me on Twitter.</p>
-                                                </div>
-                                            </div>
+    const TitleTypography = styled(Typography)(({ theme }) => ({
+        fontWeight: 'bold',
+        marginBottom: theme.spacing(2),
+        marginTop: theme.spacing(2),
+        textAlign: 'left',
+    }));
 
-                                            <div class="info-block-w-icon">
-                                                <div class="ci-icon">
-                                                    <i class="linecons linecons-phone"></i>
-                                                </div>
-                                                <div class="ci-text">
-                                                    <a href="mailto:0xdevscrooge@gmail.com" target="_blank">
-                                                        0xdevscrooge@gmail.com
-                                                    </a>
-                                                    <p className="contact-text">You can send me an email</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+    const TitleDivider = styled(Box)(({ theme }) => ({
+        backgroundColor: '#252525',
+        borderBottom: `1px solid ${theme.palette.divider}`,
+        marginBottom: theme.spacing(2),
+        marginTop: theme.spacing(2),
+    }));
 
-                                <div className="question-contact">
-                                    <div class="col-xs-12 col-sm-8">
-                                        <div class="block-title">
-                                            <h2>How Can I Help You?</h2>
-                                        </div>
-                                        <a
-                                            href="mailto:0xdevscrooge@gmail.com"
-                                            target="_blank"
-                                            class="btn btn-primary"
-                                        >Send message</a >
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    const ContactTitle = () => {
+        return (
+            <div className="ContactTitle" sx={{ margin: '50px 0 0 0' }}>
+                <TitleDivider />
+                <TitleBox>
+                    <TitleTypography variant="h4" component="h1">
+                        Contact
+                    </TitleTypography>
+                </TitleBox>
+                <TitleDivider />
             </div>
-        </>
-    )
-}
+        );
+    };
+
+
+
+    return (
+        <Box className="home-box" sx={{ backgroundColor: 'primary.main' }} margin="-25px 0 0 0">
+            <ContactTitle></ContactTitle>
+            <Box
+                sx={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    flexDirection: 'column',
+                    height: '50vh',
+                    backgroundColor: '#222222',
+                    color: '#c9c7c7',
+                    textAlign: 'center',
+                    py: 5,
+                    px: { xs: 2, sm: 5 },
+                }}
+            >
+                <Typography variant="h4" sx={{ mb: 3, color: '#1B7BEC' }}>
+                    How can I help you?
+                </Typography>
+                <Box sx={{ display: 'flex', alignItems: 'center' }}>
+                    <LinkedIn
+                        sx={{ mr: 1 }}
+                        fontSize="large"
+                    />
+                    <Typography variant="body1" sx={{ mr: 2 }}>
+                        You can contact me on LinkedIn:
+                    </Typography>
+                    <Link
+                        href="https://www.linkedin.com/in/jmariadlcs"
+                        target="_blank"
+                        rel="noopener"
+                        underline="hover"
+                        sx={{ color: '#c9c7c7' }}
+                    >
+                        linkedin.com/in/your-profile-url
+                    </Link>
+                </Box>
+                <Box sx={{ display: 'flex', alignItems: 'center', mt: 3 }}>
+                    <Twitter
+                        sx={{ mr: 1 }}
+                        fontSize="large"
+                    />
+                    <Typography variant="body1" sx={{ mr: 2 }}>
+                        You can contact me on Twitter:
+                    </Typography>
+                    <Link
+                        href="https://twitter.com/devScrooge"
+                        target="_blank"
+                        rel="noopener"
+                        underline="hover"
+                        sx={{ color: '#c9c7c7' }}
+                    >
+                        @devScrooge
+                    </Link>
+                </Box>
+                <Box sx={{ display: 'flex', alignItems: 'center', mt: 3 }}>
+                    <Mail
+                        sx={{ mr: 1 }}
+                        fontSize="large"
+                    />
+                    <Typography variant="body1" sx={{ mr: 2 }}>
+                        You can send me an email:
+                    </Typography>
+                    <Link
+                        href="mailto:0xdevscrooge@gmail.com"
+                        underline="hover"
+                        sx={{ color: '#c9c7c7' }}
+                    >
+                        0xdevscrooge@gmail.com
+                    </Link>
+                </Box>
+                <Button
+                    variant="contained"
+                    sx={{ mt: 3, backgroundColor: '#c9c7c7', color: '#1B7BEC' }}
+                    href="mailto:0xdevscrooge@gmail.com"
+                >
+                    Send message
+                </Button>
+            </Box>
+        </Box>
+    );
+};
+
+export default ContactPage;

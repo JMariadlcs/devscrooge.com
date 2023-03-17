@@ -1,26 +1,29 @@
+import { useState } from "react";
+import { Box, ThemeProvider } from "@mui/material"
 import { Routes, Route } from 'react-router-dom'
-import { Home } from './components/home'
-import { Services } from './components/services'
-import { Threads } from './components/threads'
-import { Contact } from './components/contact'
-import { Header } from './components/header'
-import { Footer } from './components/footer'
+import Navbar from "./components/Navbar"
+import Footer from "./components/Footer"
+import Home from "./components/Home"
+import ServicesPage from "./components/Services"
+import Contact from "./components/Contact"
+import mainTheme from "./themeConfig"
 
 function App() {
-  return (
-    <>
-      <div className="JMaria-devScrooge-web">
-        <Header />
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='services' element={<Services />} />
-          <Route path='threads' element={<Threads />} />
-          <Route path='contact' element={<Contact />} />
-        </Routes>
-        <Footer />
-      </div>
-    </>
-  );
+
+
+    return (
+        <ThemeProvider theme={mainTheme}>
+            <Box>
+                <Navbar />
+                <Routes>
+                    <Route path='/' element={<Home />} />
+                    <Route path='/services' element={<ServicesPage />} />
+                    <Route path='/contact' element={<Contact />} />
+                </Routes>
+                <Footer />
+            </Box>
+        </ThemeProvider >
+    );
 }
 
 export default App
