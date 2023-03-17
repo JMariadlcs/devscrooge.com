@@ -10,7 +10,8 @@ import {
     styled,
     Toolbar,
     Typography,
-    Link
+    Link,
+    Button
 } from "@mui/material";
 import React, { useState } from "react";
 
@@ -52,9 +53,9 @@ const Navbar = () => {
     return (
         <AppBar position="sticky">
             <StyledToolbar>
-                <Typography variant="h6" sx={{ display: { xs: "none", sm: "block" }, flexDirection: 'row', fontWeight: 'bold' }}>
+                <Button href="/" variant="h6" sx={{ display: { xs: "none", sm: "block" }, flexDirection: 'row', fontWeight: 'bold' }}>
                     JMaria - devScrooge
-                </Typography>
+                </Button>
                 <Typography sx={{ display: { xs: "block", sm: "none" }, fontSize: 15, fontWeight: 'bold' }}>
                     JMaria - devScrooge
                 </Typography>
