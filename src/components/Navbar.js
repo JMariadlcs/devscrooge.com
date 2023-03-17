@@ -1,12 +1,8 @@
 import { useLocation } from 'react-router-dom';
 import {
     AppBar,
-    Avatar,
-    Badge,
     Box,
-    InputBase,
     Menu,
-    MenuItem,
     styled,
     Toolbar,
     Typography,
