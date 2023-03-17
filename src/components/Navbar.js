@@ -1,4 +1,3 @@
-import { Mail, Notifications, Pets } from "@mui/icons-material";
 import { useLocation } from 'react-router-dom';
 import {
     AppBar,
@@ -40,18 +39,26 @@ const MenuMobile = styled(Menu)(({ theme }) => ({
 
 const Navbar = () => {
     const [open, setOpen] = useState(false);
+
+    const handleDrawerOpen = () => {
+        setOpen(true);
+    };
+
+    const handleDrawerClose = () => {
+        setOpen(false);
+    };
     const location = useLocation();
-    console.log(location)
+
     return (
         <AppBar position="sticky">
             <StyledToolbar>
                 <Typography variant="h6" sx={{ display: { xs: "none", sm: "block" }, flexDirection: 'row', fontWeight: 'bold' }}>
                     JMaria - devScrooge
                 </Typography>
-                <Typography sx={{ display: { xs: "block", sm: "none" }, fontSize: 15 }}>
+                <Typography sx={{ display: { xs: "block", sm: "none" }, fontSize: 15, fontWeight: 'bold' }}>
                     JMaria - devScrooge
                 </Typography>
-                <Typography variant="h6" sx={{ display: { xs: "flex", sm: "none", md: "none", lg: "none", xl: "none" }, color: "secondary.main", fontSize: 15 }}
+                <Typography variant="h6" sx={{ display: { xs: "flex", sm: "none", md: "none", lg: "none", xl: "none" }, color: "secondary.main", fontSize: 15 }} margin="0 10px 0 0"
                     onClick={(e) => setOpen(true)}
                 >
                     MENU
