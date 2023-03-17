@@ -37,13 +37,6 @@ const MenuMobile = styled(Menu)(({ theme }) => ({
 const Navbar = () => {
     const [open, setOpen] = useState(false);
 
-    const handleDrawerOpen = () => {
-        setOpen(true);
-    };
-
-    const handleDrawerClose = () => {
-        setOpen(false);
-    };
     const location = useLocation();
 
     return (

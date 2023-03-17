@@ -60,7 +60,6 @@ const Home = () => {
     const HireBox = styled(Box)(({ theme }) => ({
         alignItems: 'center',
         backgroundColor: 'secondary.main',
-        borderRadius: 2,
         border: '1px solid rgba(255, 255, 255, 0.2)',
         boxShadow: '0px 0px 20px 1px rgba(255, 255, 255, 0.2)',
         flexGrow: '0',
