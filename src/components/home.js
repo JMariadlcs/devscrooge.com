@@ -2,6 +2,7 @@ import { Box, Typography, styled, Divider, Button } from "@mui/material"
 import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import CircularImage from './HomeImage'
+import HomeButtons from './HomeButtons'
 
 const Home = () => {
     const theme = useTheme();
@@ -102,6 +103,7 @@ const Home = () => {
                     <Typography color="textPrimary" margin='0 0 20px 0'>
                         Now is the time to join this revolution and discover how blockchain technology can improve your life and your business. Be part of the innovation and join the present of decentralized software.
                     </Typography>
+                    <HomeButtons />
                 </Box>
             </JMariaBoxMobile>
 
@@ -120,6 +122,7 @@ const Home = () => {
                     <Typography color="textPrimary" margin='0 0 20px 0'>
                         Now is the time to join this revolution and discover how blockchain technology can improve your life and your business. Be part of the innovation and join the present of decentralized software.
                     </Typography>
+                    <HomeButtons />
                 </Box>
             </JMariaBoxPC>
 
