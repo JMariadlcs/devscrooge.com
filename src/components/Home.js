@@ -1,61 +1,13 @@
-import { Box, Typography, styled, Divider, Button } from "@mui/material"
+import { Box, Typography, Divider, Button, styled } from "@mui/material"
+import { JMariaBoxPC, JMariaBoxMobile, ServicesBox, StyledBox } from "./Custom/CustomComponents"
 import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
-import CircularImage from './HomeImage'
-import HomeButtons from './HomeButtons'
+import CircularImage from './Utils/HomeImage'
+import HomeButtons from './Utils/HomeButtons'
 
 const Home = () => {
     const theme = useTheme();
     const isXlScreen = useMediaQuery(theme.breakpoints.up('xl'));
-
-    const JMariaBoxPC = styled(Box)(({ theme }) => ({
-        padding: "100px 30px 100px 50px",
-        [theme.breakpoints.up("xl")]: {
-            padding: "100px 300px 100px 500px",
-            display: "none",
-        },
-    }));
-
-    const JMariaBoxMobile = styled(Box)(({ theme }) => ({
-        padding: "50px 0 0 0",
-        display: "flex",
-        alignItems: "center",
-        gap: "10px",
-        flexDirection: 'column',
-        [theme.breakpoints.up("sm")]: {
-            display: "none",
-        },
-    }));
-
-    const ServicesBox = styled(Box)(({ theme }) => ({
-        display: "block",
-        alignItems: 'left',
-        direction: "row",
-        [theme.breakpoints.down("sm")]: {
-            flexDirection: 'column',
-            padding: "0px",
-        },
-        padding: "0  50px 0px 50px",
-        margin: "0 0 50px 0"
-    }));
-
-    const StyledBox = styled(Box)(({ theme }) => ({
-        display: 'flex',
-        [theme.breakpoints.down('sm')]: {
-            flexDirection: 'column',
-            padding: '50px'
-        },
-        [theme.breakpoints.down('lg')]: {
-            flexDirection: 'column',
-            padding: '50'
-        },
-        flexDirection: 'row',
-        justifyContent: 'space-between',
-        alignItems: 'center',
-        padding: '0px 200px 50px 200px',
-        flexWrap: 'wrap',
-        margin: '0'
-    }));
 
     const HireBox = styled(Box)(({ theme }) => ({
         alignItems: 'center',

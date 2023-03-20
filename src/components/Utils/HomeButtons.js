@@ -1,5 +1,5 @@
 import { Button, Box } from '@mui/material';
-import CV from '../Documents/CV.pdf'
+import CV from '../../Documents/CV.pdf'
 
 const blueButtonStyle = {
     color: 'white',

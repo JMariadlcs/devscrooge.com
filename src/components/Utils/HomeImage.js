@@ -35,8 +35,8 @@ const CircularImage = ({ src }) => {
 
     const classes = useStyles();
 
-    const image1 = require("../assets/photo.png")
-    const image2 = require("../assets/scrooge2.png")
+    const image1 = require("../../assets/photo.png")
+    const image2 = require("../../assets/scrooge2.png")
     const [image, setImage] = useState(image1)
 
     return (

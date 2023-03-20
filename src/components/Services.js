@@ -1,28 +1,11 @@
 import { Box, Typography, styled, Button } from "@mui/material"
 import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
+import { StyledBox, ServiceTitle } from "./Custom/CustomComponents";
 
 const ServicesPage = () => {
     const theme = useTheme();
     const isXlScreen = useMediaQuery(theme.breakpoints.up('xl'));
-
-    const StyledBox = styled(Box)(({ theme }) => ({
-        display: 'flex',
-        [theme.breakpoints.down('sm')]: {
-            flexDirection: 'column',
-            padding: '50px'
-        },
-        [theme.breakpoints.down('lg')]: {
-            flexDirection: 'column',
-            padding: '50'
-        },
-        flexDirection: 'row',
-        justifyContent: 'space-between',
-        alignItems: 'center',
-        padding: '0px 200px 50px 200px',
-        flexWrap: 'wrap',
-        margin: '0'
-    }));
 
     const HireBox = styled(Box)(({ theme }) => ({
         alignItems: 'center',
@@ -50,51 +33,6 @@ const ServicesPage = () => {
             transform: 'translateY(-5px)',
         },
     }));
-
-    const TitleBox = styled(Box)(({ theme }) => ({
-        backgroundColor: '#2b2b2b',
-        color: '#FFFFFF',
-        paddingLeft: theme.spacing(10),
-        paddingRight: theme.spacing(2),
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        height: '200px', // set the height to be larger than text height
-        margin: '50px 0 0 0'
-    }));
-
-    const TitleTypography = styled(Typography)(({ theme }) => ({
-        fontWeight: 'bold',
-        marginBottom: theme.spacing(2),
-        marginTop: theme.spacing(2),
-        textAlign: 'left',
-    }));
-
-    const TitleDivider = styled(Box)(({ theme }) => ({
-        backgroundColor: '#252525',
-        borderBottom: `1px solid ${theme.palette.divider}`,
-        marginBottom: theme.spacing(2),
-        marginTop: theme.spacing(2),
-    }));
-
-    const ServiceTitle = () => {
-        return (
-            <div className="servicesTittle" sx={{ margin: '50px 0 0 0' }}>
-                <TitleDivider />
-                <TitleBox>
-                    <TitleTypography variant="h4" component="h1">
-                        Services
-                    </TitleTypography>
-                    <Typography variant="body1">
-                        The prices for all services are custom-designed in a specialized way
-                        for each project depending on its size and complexity. A quotation
-                        will be given after contact.
-                    </Typography>
-                </TitleBox>
-                <TitleDivider />
-            </div>
-        );
-    };
 
 
     return (

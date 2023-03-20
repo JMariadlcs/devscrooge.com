@@ -1,48 +1,8 @@
-import { Box, Typography, Link, Button, styled } from '@mui/material';
+import { Box, Typography, Link, Button } from '@mui/material';
 import { LinkedIn, Twitter, Mail } from '@mui/icons-material';
+import { ContactTitle } from "./Custom/CustomComponents"
 
 const ContactPage = () => {
-
-    const TitleBox = styled(Box)(({ theme }) => ({
-        backgroundColor: '#2b2b2b',
-        color: '#FFFFFF',
-        paddingLeft: theme.spacing(10),
-        paddingRight: theme.spacing(2),
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        height: '200px', // set the height to be larger than text height
-        margin: '50px 0 0 0'
-    }));
-
-    const TitleTypography = styled(Typography)(({ theme }) => ({
-        fontWeight: 'bold',
-        marginBottom: theme.spacing(2),
-        marginTop: theme.spacing(2),
-        textAlign: 'left',
-    }));
-
-    const TitleDivider = styled(Box)(({ theme }) => ({
-        backgroundColor: '#252525',
-        borderBottom: `1px solid ${theme.palette.divider}`,
-        marginBottom: theme.spacing(2),
-        marginTop: theme.spacing(2),
-    }));
-
-    const ContactTitle = () => {
-        return (
-            <div className="ContactTitle" sx={{ margin: '50px 0 0 0' }}>
-                <TitleDivider />
-                <TitleBox>
-                    <TitleTypography variant="h4" component="h1">
-                        Contact
-                    </TitleTypography>
-                </TitleBox>
-                <TitleDivider />
-            </div>
-        );
-    };
-
 
 
     return (
