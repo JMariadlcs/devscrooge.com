@@ -1,7 +1,7 @@
 import { Box, Typography } from '@mui/material';
 import { LinkedIn, Twitter, GitHub, Mail } from '@mui/icons-material';
 
-const Footer = () => {
+const FooterComponent = () => {
     return (
         <Box sx={{
             bgcolor: '#222222',
@@ -38,4 +38,4 @@ const Footer = () => {
     );
 };
 
-export default Footer
+export default FooterComponent
