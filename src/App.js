@@ -1,7 +1,7 @@
 import { Box, ThemeProvider } from "@mui/material"
 import { Routes, Route } from 'react-router-dom'
 import Navbar from "./components/Navbar"
-
+import FooterBar from "./components/FooterBar"
 import Home from "./components/Home"
 import ServicesPage from "./components/Services"
 import ThreadsPage from "./components/Threads"
@@ -21,7 +21,7 @@ function App() {
                     <Route path='/threads' element={<ThreadsPage />} />
                     <Route path='/contact' element={<Contact />} />
                 </Routes>
-
+                <FooterBar />
             </Box>
         </ThemeProvider >
     );
