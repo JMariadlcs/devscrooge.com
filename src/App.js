@@ -5,7 +5,7 @@ import FooterBar from "./components/FooterBar"
 import Home from "./components/Home"
 import ServicesPage from "./components/Services"
 import ThreadsPage from "./components/Threads"
-
+import ContactPage from "./components/Contact"
 import mainTheme from "./themeConfig"
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
                     <Route path="/" element={<Home />} />
                     <Route path="/services" element={<ServicesPage />} />
                     <Route path='/threads' element={<ThreadsPage />} />
-
+                    <Route path='/contact' element={<ContactPage />} />
                 </Routes>
                 <FooterBar />
             </Box>
