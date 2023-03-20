@@ -35,7 +35,7 @@ const FooterComponent = () => {
                 />
             </Box>
         </Box>
-    );
+    )
 };
 
 export default FooterComponent
