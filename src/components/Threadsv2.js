@@ -187,7 +187,7 @@ function Threadsv2() {
                         </Typography>
                         {selectedCategory.tweets.map((tweet) => (
                             <Box className="tweetBox" key={tweet.link} sx={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-                                <Typography gutterBottom sx={{ position: 'absolute', margin: '0 0 0 -5px' }}>
+                                <Typography className="tweetLink" gutterBottom sx={{ position: 'absolute', margin: '0 0 0 -5px' }}>
                                     <a href={tweet.link} target="_blank" rel="noopener noreferrer" className={classes.tweetLink}>
                                         {tweet.title}
                                     </a>
@@ -231,7 +231,7 @@ function Threadsv2() {
                             </Typography>
                             {category.tweets.map((tweet) => (
                                 <Box className="tweetBox" key={tweet.link} sx={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-                                    <Typography gutterBottom sx={{ position: 'absolute', margin: '0 0 0 -5px' }}>
+                                    <Typography className="tweetLink" gutterBottom sx={{ position: 'absolute', margin: '0 0 0 -5px' }}>
                                         <a href={tweet.link} target="_blank" rel="noopener noreferrer" className={classes.tweetLink}>
                                             {tweet.title}
                                         </a>
