@@ -80,7 +80,7 @@ export const StyledBox = styled(Box)(({ theme }) => ({
 
 // Services 
 
-const TitleBox = styled(Box)(({ theme }) => ({
+export const TitleBox = styled(Box)(({ theme }) => ({
     backgroundColor: '#2b2b2b',
     color: '#FFFFFF',
     paddingLeft: theme.spacing(10),
@@ -92,14 +92,14 @@ const TitleBox = styled(Box)(({ theme }) => ({
     margin: '50px 0 0 0'
 }));
 
-const TitleTypography = styled(Typography)(({ theme }) => ({
+export const TitleTypography = styled(Typography)(({ theme }) => ({
     fontWeight: 'bold',
     marginBottom: theme.spacing(2),
     marginTop: theme.spacing(2),
     textAlign: 'left',
 }));
 
-const TitleDivider = styled(Box)(({ theme }) => ({
+export const TitleDivider = styled(Box)(({ theme }) => ({
     backgroundColor: '#252525',
     borderBottom: `1px solid ${theme.palette.divider}`,
     marginBottom: theme.spacing(2),
@@ -140,3 +140,4 @@ export const ContactTitle = () => {
         </div>
     );
 };
+

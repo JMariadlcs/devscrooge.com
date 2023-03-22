@@ -4,9 +4,10 @@ import Navbar from "./components/Navbar"
 import FooterBar from "./components/FooterBar"
 import Home from "./components/Home"
 import ServicesPage from "./components/Services"
-import ThreadsPage from "./components/Threads"
+// import ThreadsPage from "./components/Threads"
 import ContactPage from "./components/Contact"
 import mainTheme from "./themeConfig"
+import Threadsv2 from "./components/Threadsv2"
 
 function App() {
 
@@ -18,7 +19,7 @@ function App() {
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/services" element={<ServicesPage />} />
-                    <Route path="/threads" element={<ThreadsPage />} />
+                    <Route path="/threads" element={<Threadsv2 />} />
                     <Route path='/contact' element={<ContactPage />} />
                 </Routes>
                 <FooterBar />

@@ -1,0 +1,29 @@
+.subphrase {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 15px;
+}
+.categoryBox {
+  margin-bottom: 50px;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  display: column;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: center;
+}
+
+.tweetBox {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  text-align: left;
+  width: 100%;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.languageBox {
+  margin-top: -10px;
+}
