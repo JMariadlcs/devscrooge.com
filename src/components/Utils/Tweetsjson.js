@@ -34,6 +34,11 @@ export const categories = [
                 "title": "ENS",
                 "link": "https://twitter.com/devScrooge/status/1556980313007558658?s=20",
                 "language": "Spanish"
+            },
+            {
+                "title": "Secure private keys",
+                "link": "https://twitter.com/devScrooge/status/1533426256959651840?s=20",
+                "language": "Spanish"
             }
         ]
     },
