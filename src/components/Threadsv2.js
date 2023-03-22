@@ -145,7 +145,7 @@ function Threadsv2() {
                         Twitter threads
                     </TitleTypography>
                     <Button className={classes.categoryButton} color="inherit" onClick={handleDrawerOpen}>
-                        Categories
+                        Topics
                     </Button>
                     <Typography fontSize="20px" className="subphrase">A recopilation of all my twitter threads related with blockchain dev and security research.</Typography>
                 </TitleBox>
