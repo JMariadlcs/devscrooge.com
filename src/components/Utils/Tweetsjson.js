@@ -16,6 +16,11 @@ export const categories = [
                 "title": "Resources for learning web3 dev",
                 "link": "https://twitter.com/devScrooge/status/1529155591008034816?s=20",
                 "language": "Spanish"
+            },
+            {
+                "title": "Become blockchain dev roadmap",
+                "link": "https://twitter.com/devScrooge/status/1526905559215120384?s=20",
+                "language": "Spanish"
             }
         ]
     },
@@ -36,7 +41,7 @@ export const categories = [
                 "language": "Spanish"
             },
             {
-                "title": "Secure private keys",
+                "title": "Secure your private keys",
                 "link": "https://twitter.com/devScrooge/status/1533426256959651840?s=20",
                 "language": "Spanish"
             }
