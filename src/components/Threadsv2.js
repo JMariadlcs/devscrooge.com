@@ -181,7 +181,7 @@ function Threadsv2() {
             </Drawer>
             <main className={classes.main} sx={{ alignItems: "center" }}>
                 {selectedCategory ? (
-                    <Box>
+                    <Box className="categoryBox">
                         <Typography variant="h4" gutterBottom className={classes.categoryTitle}>
                             {selectedCategory.name}
                         </Typography>
