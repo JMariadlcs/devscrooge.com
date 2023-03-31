@@ -1,7 +1,7 @@
 import { Box, Typography, styled, Button } from "@mui/material"
 import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
-import { StyledBox, ProductsTitle } from "./Custom/CustomComponents";
+import { StyledBox } from "./Custom/CustomComponents";
 import { BannerProduct } from "./Utils/ProductBanner";
 import Dialog from '@material-ui/core/Dialog';
 import DialogTitle from '@material-ui/core/DialogTitle';
@@ -66,7 +66,6 @@ const ProductsPage = () => {
 
     return (
         <Box className="home-box" sx={{ backgroundColor: 'primary.main' }} margin="-25px 0 0 0">
-            <ProductsTitle />
             <StyledBox className="home-hire-box" margin="20px 0 100px 0" padding="0px 200px">
                 <HireBox className="home-buy-code4arena101-box">
                     <Typography variant="h5" component="h2" gutterBottom color="textSecondary" margin='30px 0 20px 0' align="center" alignSelf="center" fontWeight='bold'>

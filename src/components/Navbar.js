@@ -28,6 +28,9 @@ const Navbar = () => {
                     <Link href="/services" color={location.pathname === '/services' ? 'textSecondary' : 'secondary.main'} underline='none' sx={{ display: { xs: "none", sm: "flex", md: "flex", lg: "flex", xl: "flex" }, fontSize: 15 }}>
                         Services
                     </Link>
+                    <Link href="/products" color={location.pathname === '/products' ? 'textSecondary' : 'secondary.main'} underline='none' sx={{ display: { xs: "none", sm: "flex", md: "flex", lg: "flex", xl: "flex" }, fontSize: 15 }}>
+                        Products
+                    </Link>
                     <Link href="/threads" color={location.pathname === '/threads' ? 'textSecondary' : 'secondary.main'} underline='none' sx={{ display: { xs: "none", sm: "flex", md: "flex", lg: "flex", xl: "flex" }, fontSize: 15 }}>
                         Threads
                     </Link>
@@ -66,6 +69,12 @@ const Navbar = () => {
                     padding: "0 0 0 10px",
                     margin: "0 8px 8px 0"
                 }}>Services</Link>
+                <Link href="/products" underline='none' sx={{
+                    display: "block",
+                    color: "black",
+                    padding: "0 0 0 10px",
+                    margin: "0 8px 8px 0"
+                }}>Products</Link>
                 <Link href="/threads" underline='none' sx={{
                     display: "block",
                     color: "black",

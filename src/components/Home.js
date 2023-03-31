@@ -4,6 +4,7 @@ import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import CircularImage from './Utils/HomeImage'
 import HomeButtons from './Utils/HomeButtons'
+import ProductsPage from './Products'
 
 const Home = () => {
     const theme = useTheme();
@@ -229,6 +230,11 @@ const Home = () => {
                     </Box>
                 </HireBox>
             </StyledBox>
+
+            {/*ProductsBox*/}
+            <Typography color="white" fontSize='20px' fontWeight='bold' margin="0 0 0px 150px">Products</Typography>
+            <Divider />
+            <ProductsPage />
         </Box >
 
     )
