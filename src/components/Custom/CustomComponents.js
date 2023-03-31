@@ -125,6 +125,25 @@ export const ServiceTitle = () => {
     );
 };
 
+// Products 
+
+export const ProductsTitle = () => {
+    return (
+        <div className="servicesTittle" sx={{ margin: '50px 0 0 0' }}>
+            <TitleDivider />
+            <TitleBox>
+                <TitleTypography variant="h4" component="h1">
+                    Products
+                </TitleTypography>
+                <Typography variant="body1">
+                    Each product can be paid with Credit Card, PayPal or with Crypto!
+                </Typography>
+            </TitleBox>
+            <TitleDivider />
+        </div>
+    );
+};
+
 // Contact 
 
 export const ContactTitle = () => {
