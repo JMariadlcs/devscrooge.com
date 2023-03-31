@@ -65,7 +65,7 @@ const ProductsPage = () => {
     };
 
     return (
-        <Box className="home-box" sx={{ backgroundColor: 'primary.main' }} margin="-25px 0 0 0">
+        <Box className="home-box" sx={{ backgroundColor: 'primary.main', height: '140vh' }} padding='0 0 150px 0' margin="-25px 0 0 0">
             <StyledBox className="home-hire-box" margin="20px 0 100px 0" padding="0px 200px">
                 <HireBox className="home-buy-code4arena101-box">
                     <Typography variant="h5" component="h2" gutterBottom color="textSecondary" margin='30px 0 20px 0' align="center" alignSelf="center" fontWeight='bold'>
