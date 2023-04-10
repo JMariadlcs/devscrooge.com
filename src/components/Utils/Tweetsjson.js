@@ -56,6 +56,11 @@ export const categories = [
                 "title": "Reentrancy attack with ERC721 tokens",
                 "link": "https://twitter.com/devScrooge/status/1629445613891776514?s=20",
                 "language": "Spanish"
+            },
+            {
+                "title": "How to get your first client for Private Audits?",
+                "link": "https://twitter.com/devScrooge/status/1645434551869616131?s=20",
+                "language": "English"
             }
         ]
     },
