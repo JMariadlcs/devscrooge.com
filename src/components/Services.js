@@ -45,13 +45,23 @@ const ServicesPage = () => {
                         DEEP DIVE AUDIT
                     </Typography>
                     <Box sx={{ display: 'flex', alignItems: 'center', flexDirection: 'column' }}>
-                        <Button variant="contained" href={"https://docs.google.com/forms/d/e/1FAIpQLSees9RL4-zXmWkWsY_tZ4-52JL1AoGjYH_1ajjuizNDV5PFdg/viewform?usp=sf_link"} target="_blank" s sx={{
-                            borderRadius: 2,
-                            border: '1px solid rgba(27, 123, 236, 1)',
-                            boxShadow: '0px 0px 20px 1px rgba(255, 255, 255, 0.2)',
-                        }}>
-                            Hire
-                        </Button>
+                        <Box sx={{ display: 'flex', alignItems: 'center', flexDirection: 'row' }}>
+                            <Button variant="contained" href={"https://docs.google.com/forms/d/e/1FAIpQLSees9RL4-zXmWkWsY_tZ4-52JL1AoGjYH_1ajjuizNDV5PFdg/viewform?usp=sf_link"} target="_blank" s sx={{
+                                borderRadius: 2,
+                                border: '1px solid rgba(27, 123, 236, 1)',
+                                boxShadow: '0px 0px 20px 1px rgba(255, 255, 255, 0.2)',
+                                margin: '0 5px 0 0'
+                            }}>
+                                Hire
+                            </Button>
+                            <Button variant="contained" href={"https://twitter.com/devScrooge"} target="_blank" s sx={{
+                                borderRadius: 2,
+                                border: '1px solid rgba(27, 123, 236, 1)',
+                                boxShadow: '0px 0px 20px 1px rgba(255, 255, 255, 0.2)',
+                            }}>
+                                DM
+                            </Button>
+                        </Box>
                         <Box sx={{ ml: 2 }} >
                             <Typography color="textPrimary" variant="body1" component="p" gutterBottom margin="20px 0 10px 0">
                                 <span style={{ color: 'white' }}>&bull;</span> Code review
@@ -77,13 +87,23 @@ const ServicesPage = () => {
                         SMART CONTRACT DEVELOPMENT
                     </Typography>
                     <Box sx={{ display: 'flex', alignItems: 'center', flexDirection: 'column' }}>
-                        <Button variant="contained" href={"https://docs.google.com/forms/d/e/1FAIpQLSees9RL4-zXmWkWsY_tZ4-52JL1AoGjYH_1ajjuizNDV5PFdg/viewform?usp=sf_link"} target="_blank" s sx={{
-                            borderRadius: 2,
-                            border: '1px solid rgba(27, 123, 236, 1)',
-                            boxShadow: '0px 0px 20px 1px rgba(255, 255, 255, 0.2)',
-                        }}>
-                            Hire
-                        </Button>
+                        <Box sx={{ display: 'flex', alignItems: 'center', flexDirection: 'row' }}>
+                            <Button variant="contained" href={"https://docs.google.com/forms/d/e/1FAIpQLSees9RL4-zXmWkWsY_tZ4-52JL1AoGjYH_1ajjuizNDV5PFdg/viewform?usp=sf_link"} target="_blank" s sx={{
+                                borderRadius: 2,
+                                border: '1px solid rgba(27, 123, 236, 1)',
+                                boxShadow: '0px 0px 20px 1px rgba(255, 255, 255, 0.2)',
+                                margin: '0 5px 0 0'
+                            }}>
+                                Hire
+                            </Button>
+                            <Button variant="contained" href={"https://twitter.com/devScrooge"} target="_blank" s sx={{
+                                borderRadius: 2,
+                                border: '1px solid rgba(27, 123, 236, 1)',
+                                boxShadow: '0px 0px 20px 1px rgba(255, 255, 255, 0.2)',
+                            }}>
+                                DM
+                            </Button>
+                        </Box>
                         <Box sx={{ ml: 2 }} >
                             <Typography color="textPrimary" variant="body1" component="p" gutterBottom margin="20px 0 10px 0">
                                 <span style={{ color: 'white' }}>&bull;</span> Personalized development environment
@@ -112,13 +132,23 @@ const ServicesPage = () => {
                         CONSULTANCY
                     </Typography>
                     <Box sx={{ display: 'flex', alignItems: 'center', flexDirection: 'column' }}>
-                        <Button variant="contained" href={"https://docs.google.com/forms/d/e/1FAIpQLSees9RL4-zXmWkWsY_tZ4-52JL1AoGjYH_1ajjuizNDV5PFdg/viewform?usp=sf_link"} target="_blank" s sx={{
-                            borderRadius: 2,
-                            border: '1px solid rgba(27, 123, 236, 1)',
-                            boxShadow: '0px 0px 20px 1px rgba(255, 255, 255, 0.2)',
-                        }}>
-                            Hire
-                        </Button>
+                        <Box sx={{ display: 'flex', alignItems: 'center', flexDirection: 'row' }}>
+                            <Button variant="contained" href={"https://docs.google.com/forms/d/e/1FAIpQLSees9RL4-zXmWkWsY_tZ4-52JL1AoGjYH_1ajjuizNDV5PFdg/viewform?usp=sf_link"} target="_blank" s sx={{
+                                borderRadius: 2,
+                                border: '1px solid rgba(27, 123, 236, 1)',
+                                boxShadow: '0px 0px 20px 1px rgba(255, 255, 255, 0.2)',
+                                margin: '0 5px 0 0'
+                            }}>
+                                Hire
+                            </Button>
+                            <Button variant="contained" href={"https://twitter.com/devScrooge"} target="_blank" s sx={{
+                                borderRadius: 2,
+                                border: '1px solid rgba(27, 123, 236, 1)',
+                                boxShadow: '0px 0px 20px 1px rgba(255, 255, 255, 0.2)',
+                            }}>
+                                DM
+                            </Button>
+                        </Box>
                         <Box sx={{ ml: 2 }} >
                             <Typography color="textPrimary" variant="body1" component="p" gutterBottom margin="20px 0 10px 0">
                                 <span style={{ color: 'white' }}>&bull;</span> 1 to 1 call
