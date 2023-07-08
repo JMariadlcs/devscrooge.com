@@ -45,14 +45,14 @@ const Home = () => {
                 <Box className="JMariaInfoText" sx={{ padding: '50px ' }}>
                     <Typography color="textPrimary">Blockchain Security Researcher and Engineer</Typography>
                     <Typography color='white' fontSize='40px' fontWeight='bold' margin='0 0 20px 0'>devScrooge</Typography>
-                    <Typography color="textPrimary" margin='0 0 20px 0'>
+                    <Typography color="textPrimary" margin='0 0 20px 0' fontSize='15px'>
                         Blockchain protocols are changing the world by improving people's lives by offering transparency, security and decentralized transactions. All protocols are born from an idea and we all have ideas, but without the technical knowledge it is not possible to achieve the most important thing, to implement them.
                     </Typography>
-                    <Typography color="textPrimary" margin='0 0 20px 0'>
+                    <Typography color="textPrimary" margin='0 0 20px 0' fontSize='15px'>
                         Due to the hours dedicated to the theoretical study of blockchain technology and my experience as a Blockchain Engineer both designing decentralized application architectures and developing Smart Contracts I am the ideal person with whom to consult - audit - develop your idea in an effective, efficient and secure way.
                     </Typography>
 
-                    <Typography color="textPrimary" margin='0 0 20px 0'>
+                    <Typography color="textPrimary" margin='0 0 20px 0 ' fontSize='15px'>
                         Now is the time to join this revolution and discover how blockchain technology can improve your life and your business. Be part of the innovation and join the present of decentralized software.
                     </Typography>
                     <HomeButtons />
@@ -65,13 +65,13 @@ const Home = () => {
                 <Box className="JMariaInfoText" padding="0 0 0 50px">
                     <Typography color="textPrimary">Blockchain Security Researcher and Engineer</Typography>
                     <Typography color='white' fontSize='40px' fontWeight='bold' margin='0 0 20px 0'>devScrooge</Typography>
-                    <Typography color="textPrimary" margin='0 0 20px 0'>
+                    <Typography color="textPrimary" margin='0 0 20px 0' fontSize='15px'>
                         Blockchain protocols are changing the world by improving people's lives by offering transparency, security and decentralized transactions. All protocols are born from an idea and we all have ideas, but without the technical knowledge it is not possible to achieve the most important thing, to implement them.
                     </Typography>
-                    <Typography color="textPrimary" margin='0 0 20px 0'>
+                    <Typography color="textPrimary" margin='0 0 20px 0 ' fontSize='15px'>
                         Due to the hours dedicated to the theoretical study of blockchain technology and my experience as a Blockchain Engineer both designing decentralized application architectures and developing Smart Contracts I am the ideal person with whom to consult - audit - develop your idea in an effective, efficient and secure way.
                     </Typography>
-                    <Typography color="textPrimary" margin='0 0 20px 0'>
+                    <Typography color="textPrimary" margin='0 0 20px 0' fontSize='15px'>
                         Now is the time to join this revolution and discover how blockchain technology can improve your life and your business. Be part of the innovation and join the present of decentralized software.
                     </Typography>
                     <HomeButtons />
