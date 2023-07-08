@@ -1,5 +1,5 @@
 import { Box, Typography, Divider, Button, styled } from "@mui/material"
-import { JMariaBoxPC, JMariaBoxMobile, ServicesBox, StyledBox } from "./Custom/CustomComponents"
+import { JMariaBoxPC, JMariaBoxMobile, StyledBox } from "./Custom/CustomComponents"
 import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import CircularImage from './Utils/HomeImage'
@@ -43,8 +43,8 @@ const Home = () => {
             <JMariaBoxMobile className="JMariaInfoBlock">
                 <CircularImage src="../assets/scrooge.png" sx={{ width: 20, height: 20, marginRight: '2rem', marginLeft: '2rem' }} padding="0 50px 0 0" />
                 <Box className="JMariaInfoText" sx={{ padding: '50px ' }}>
-                    <Typography color="textPrimary">Blockchain Engineer - Smart Contract dev</Typography>
-                    <Typography color='white' fontSize='40px' fontWeight='bold' margin='0 0 20px 0'>JMaria</Typography>
+                    <Typography color="textPrimary">Blockchain Security Researcher and Engineer</Typography>
+                    <Typography color='white' fontSize='40px' fontWeight='bold' margin='0 0 20px 0'>devScrooge</Typography>
                     <Typography color="textPrimary" margin='0 0 20px 0'>
                         Blockchain protocols are changing the world by improving people's lives by offering transparency, security and decentralized transactions. All protocols are born from an idea and we all have ideas, but without the technical knowledge it is not possible to achieve the most important thing, to implement them.
                     </Typography>
@@ -63,8 +63,8 @@ const Home = () => {
             <JMariaBoxPC className="JMariaInfoBlock" sx={{ display: { xs: 'none', lg: 'flex', xl: 'flex', md: 'flex', sm: 'flex' }, alignItems: 'center' }}>
                 <CircularImage src="../assets/scrooge.png" sx={{ width: 200, height: 200, marginRight: '2rem' }} padding="0 50px 0 0" />
                 <Box className="JMariaInfoText" padding="0 0 0 50px">
-                    <Typography color="textPrimary">Blockchain Engineer - Smart Contract dev</Typography>
-                    <Typography color='white' fontSize='40px' fontWeight='bold' margin='0 0 20px 0'>JMaria</Typography>
+                    <Typography color="textPrimary">Blockchain Security Researcher and Engineer</Typography>
+                    <Typography color='white' fontSize='40px' fontWeight='bold' margin='0 0 20px 0'>devScrooge</Typography>
                     <Typography color="textPrimary" margin='0 0 20px 0'>
                         Blockchain protocols are changing the world by improving people's lives by offering transparency, security and decentralized transactions. All protocols are born from an idea and we all have ideas, but without the technical knowledge it is not possible to achieve the most important thing, to implement them.
                     </Typography>
@@ -78,7 +78,7 @@ const Home = () => {
                 </Box>
             </JMariaBoxPC>
 
-            {/*ServicesBox*/}
+            {/*ServicesBox
             <Typography color="white" fontSize='20px' fontWeight='bold' margin="0 0 10px 150px">Services</Typography>
             <Divider />
             <StyledBox className="home-services-box" margin="20px 0 0 0" padding="0px 200px">
@@ -98,15 +98,19 @@ const Home = () => {
                     <Typography color="textPrimary" fontSize='15px' >After having a conversation with you about your idea and knowing that Smart Contracts are going to be needed, we start working on their implementation.</Typography>
                 </ServicesBox>
             </StyledBox>
+            */}
 
             {/*HireBox*/}
             <Typography color="white" fontSize='20px' fontWeight='bold' margin="0 0 0px 150px">Hire</Typography>
             <Divider />
 
+
+
             <StyledBox className="home-hire-box" margin="20px 0 100px 0" padding="0px 200px">
-                <HireBox className="home-hire-consulting-box">
-                    <Typography variant="h5" component="h2" gutterBottom color="textSecondary" margin='30px 0 20px 0' align="center" alignSelf="center" fontWeight='bold'>
-                        Consulting
+
+                <HireBox className="home-hire-simpleAudit-box" >
+                    <Typography variant="h5" component="h2" gutterBottom color="textSecondary" margin='50px 0 20px 0' align="center" alignSelf="center" fontWeight='bold'>
+                        DEEP DIVE AUDIT
                     </Typography>
                     <Box sx={{ display: 'flex', alignItems: 'center', flexDirection: 'column' }}>
                         <Button variant="contained" href={"https://docs.google.com/forms/d/e/1FAIpQLSees9RL4-zXmWkWsY_tZ4-52JL1AoGjYH_1ajjuizNDV5PFdg/viewform?usp=sf_link"} target="_blank" s sx={{
@@ -118,16 +122,19 @@ const Home = () => {
                         </Button>
                         <Box sx={{ ml: 2 }} >
                             <Typography color="textPrimary" variant="body1" component="p" gutterBottom margin="20px 0 10px 0">
-                                <span style={{ color: 'white' }}>&bull;</span> 1 to 1 call
+                                <span style={{ color: 'white' }}>&bull;</span> Code review
                             </Typography>
                             <Typography color="textPrimary" variant="body1" component="p" gutterBottom margin="0 0 10px 0">
-                                <span style={{ color: 'white' }}>&bull;</span> Solving doubts about technical implementation
+                                <span style={{ color: 'white' }}>&bull;</span> Deep search for vulnerability detection
                             </Typography>
                             <Typography color="textPrimary" variant="body1" component="p" gutterBottom margin="0 0 10px 0">
-                                <span style={{ color: 'white' }}>&bull;</span> Information on which Smart Contracts are required
+                                <span style={{ color: 'white' }}>&bull;</span> Testing with personalized scripts
                             </Typography>
                             <Typography color="textPrimary" variant="body1" component="p" gutterBottom margin="0 0 10px 0">
-                                <span style={{ color: 'white' }}>&bull;</span> Preliminary architecture design of Smart Contracts
+                                <span style={{ color: 'white' }}>&bull;</span> Report on detected vulnerabilities classified on low, medium and high severity
+                            </Typography>
+                            <Typography color="textPrimary" variant="body1" component="p" gutterBottom margin="0 0 10px 0">
+                                <span style={{ color: 'white' }}>&bull;</span> Report on the above points and how to solve them
                             </Typography>
                         </Box>
                     </Box>
@@ -135,7 +142,7 @@ const Home = () => {
 
                 <HireBox className="home-hire-simpleAudit-box">
                     <Typography variant="h5" component="h2" gutterBottom color="textSecondary" margin='30px 0 20px 0' align="center" alignSelf="center" fontWeight='bold'>
-                        Smart Contracts Development
+                        SMART CONTRACT DEVELOPMENT
                     </Typography>
                     <Box sx={{ display: 'flex', alignItems: 'center', flexDirection: 'column' }}>
                         <Button variant="contained" href={"https://docs.google.com/forms/d/e/1FAIpQLSees9RL4-zXmWkWsY_tZ4-52JL1AoGjYH_1ajjuizNDV5PFdg/viewform?usp=sf_link"} target="_blank" s sx={{
@@ -168,7 +175,36 @@ const Home = () => {
                     </Box>
                 </HireBox>
 
+                <HireBox className="home-hire-consulting-box">
+                    <Typography variant="h5" component="h2" gutterBottom color="textSecondary" margin='30px 0 20px 0' align="center" alignSelf="center" fontWeight='bold'>
+                        CONSULTANCY
+                    </Typography>
+                    <Box sx={{ display: 'flex', alignItems: 'center', flexDirection: 'column' }}>
+                        <Button variant="contained" href={"https://docs.google.com/forms/d/e/1FAIpQLSees9RL4-zXmWkWsY_tZ4-52JL1AoGjYH_1ajjuizNDV5PFdg/viewform?usp=sf_link"} target="_blank" s sx={{
+                            borderRadius: 2,
+                            border: '1px solid rgba(27, 123, 236, 1)',
+                            boxShadow: '0px 0px 20px 1px rgba(255, 255, 255, 0.2)',
+                        }}>
+                            Hire
+                        </Button>
+                        <Box sx={{ ml: 2 }} >
+                            <Typography color="textPrimary" variant="body1" component="p" gutterBottom margin="20px 0 10px 0">
+                                <span style={{ color: 'white' }}>&bull;</span> 1 to 1 call
+                            </Typography>
+                            <Typography color="textPrimary" variant="body1" component="p" gutterBottom margin="0 0 10px 0">
+                                <span style={{ color: 'white' }}>&bull;</span> Solving doubts about technical implementation
+                            </Typography>
+                            <Typography color="textPrimary" variant="body1" component="p" gutterBottom margin="0 0 10px 0">
+                                <span style={{ color: 'white' }}>&bull;</span> Information on which Smart Contracts are required
+                            </Typography>
+                            <Typography color="textPrimary" variant="body1" component="p" gutterBottom margin="0 0 10px 0">
+                                <span style={{ color: 'white' }}>&bull;</span> Preliminary architecture design of Smart Contracts
+                            </Typography>
+                        </Box>
+                    </Box>
+                </HireBox>
 
+                {/*HireBox
                 <HireBox className="home-hire-simpleAudit-box">
                     <Typography variant="h5" component="h2" gutterBottom color="textSecondary" margin='50px 0 20px 0' align="center" alignSelf="center" fontWeight='bold'>
                         Simple Audit
@@ -197,38 +233,7 @@ const Home = () => {
                         </Box>
                     </Box>
                 </HireBox>
-
-                <HireBox className="home-hire-simpleAudit-box" >
-                    <Typography variant="h5" component="h2" gutterBottom color="textSecondary" margin='50px 0 20px 0' align="center" alignSelf="center" fontWeight='bold'>
-                        Complex Audit
-                    </Typography>
-                    <Box sx={{ display: 'flex', alignItems: 'center', flexDirection: 'column' }}>
-                        <Button variant="contained" href={"https://docs.google.com/forms/d/e/1FAIpQLSees9RL4-zXmWkWsY_tZ4-52JL1AoGjYH_1ajjuizNDV5PFdg/viewform?usp=sf_link"} target="_blank" s sx={{
-                            borderRadius: 2,
-                            border: '1px solid rgba(27, 123, 236, 1)',
-                            boxShadow: '0px 0px 20px 1px rgba(255, 255, 255, 0.2)',
-                        }}>
-                            Hire
-                        </Button>
-                        <Box sx={{ ml: 2 }} >
-                            <Typography color="textPrimary" variant="body1" component="p" gutterBottom margin="20px 0 10px 0">
-                                <span style={{ color: 'white' }}>&bull;</span> Code review
-                            </Typography>
-                            <Typography color="textPrimary" variant="body1" component="p" gutterBottom margin="0 0 10px 0">
-                                <span style={{ color: 'white' }}>&bull;</span> Deep search for vulnerability detection
-                            </Typography>
-                            <Typography color="textPrimary" variant="body1" component="p" gutterBottom margin="0 0 10px 0">
-                                <span style={{ color: 'white' }}>&bull;</span> Testing with personalized scripts
-                            </Typography>
-                            <Typography color="textPrimary" variant="body1" component="p" gutterBottom margin="0 0 10px 0">
-                                <span style={{ color: 'white' }}>&bull;</span> Report on detected vulnerabilities classified on low, medium and high severity
-                            </Typography>
-                            <Typography color="textPrimary" variant="body1" component="p" gutterBottom margin="0 0 10px 0">
-                                <span style={{ color: 'white' }}>&bull;</span> Report on the above points and how to solve them
-                            </Typography>
-                        </Box>
-                    </Box>
-                </HireBox>
+                */}
             </StyledBox>
 
             {/*ProductsBox*/}

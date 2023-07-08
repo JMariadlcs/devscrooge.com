@@ -11,10 +11,10 @@ const Navbar = () => {
         <AppBar position="sticky">
             <StyledToolbar>
                 <Button href="/" variant="h6" sx={{ display: { xs: "none", sm: "block" }, flexDirection: 'row', fontWeight: 'bold' }}>
-                    JMaria - devScrooge
+                    @devScrooge
                 </Button>
                 <Button href="/" sx={{ display: { xs: "block", sm: "none" }, fontSize: 13, fontWeight: 'bold', color: "white" }}>
-                    JMaria - devScrooge
+                    @devScrooge
                 </Button>
                 <Typography variant="h6" sx={{ display: { xs: "flex", sm: "none", md: "none", lg: "none", xl: "none" }, color: "secondary.main", fontSize: 15 }} margin="0 10px 0 0"
                     onClick={(e) => setOpen(true)}
