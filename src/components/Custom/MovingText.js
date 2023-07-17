@@ -26,13 +26,13 @@ const useStylesPc = makeStyles((themeMoving) => ({
     },
 }));
 
-const useStylesMobile = makeStyles((theme) => ({
+const useStylesMobile = makeStyles((themeMoving) => ({
     movingText: {
         color: 'yellow',
         fontFamily: "'Roboto', sans-serif",
         fontWeight: 'bold',
         fontSize: '15px',
-        marginBottom: theme.spacing(2),
+        marginBottom: themeMoving.spacing(2),
         padding: '20px 0 0 0',
         textAlign: 'left',
         whiteSpace: 'nowrap',
