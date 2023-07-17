@@ -13,6 +13,7 @@ const useStylesPc = makeStyles((themeMoving) => ({
         textAlign: 'left',
         whiteSpace: 'nowrap',
         overflow: 'hidden',
+        border: 'none'
     },
     slideLeftToRight: {
         animation: '$slideLeftToRightPc 20s linear infinite',
@@ -38,6 +39,7 @@ const useStylesMobile = makeStyles((themeMoving) => ({
         textAlign: 'left',
         whiteSpace: 'nowrap',
         overflow: 'hidden',
+        border: 'none'
     },
     slideLeftToRight: {
         animation: '$slideLeftToRightMobile 10s linear infinite',
