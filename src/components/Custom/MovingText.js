@@ -10,7 +10,7 @@ const useStylesPc = makeStyles((themeMoving) => ({
         fontSize: '20px',
         marginBottom: themeMoving.spacing(2),
         padding: '20px 0 0 0',
-        textAlign: 'left',
+        textAlign: 'center',
         whiteSpace: 'nowrap',
         overflow: 'hidden',
         border: 'none'
@@ -20,7 +20,7 @@ const useStylesPc = makeStyles((themeMoving) => ({
     },
     '@keyframes slideLeftToRightPc': {
         '0%': {
-            transform: 'translateX(0%)',
+            transform: 'translateX(-75%)',
         },
         '100%': {
             transform: 'translateX(100%)',
