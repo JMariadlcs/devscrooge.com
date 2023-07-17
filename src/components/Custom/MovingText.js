@@ -13,10 +13,11 @@ const useStylesPc = makeStyles((themeMoving) => ({
         textAlign: 'left',
         whiteSpace: 'nowrap',
         overflow: 'hidden',
-        animation: '$slideLeftToRight 20s linear infinite',
-
     },
-    '@keyframes slideLeftToRight': {
+    slideLeftToRight: {
+        animation: '$slideLeftToRightPc 20s linear infinite',
+    },
+    '@keyframes slideLeftToRightPc': {
         '0%': {
             transform: 'translateX(0%)',
         },
@@ -37,9 +38,11 @@ const useStylesMobile = makeStyles((themeMoving) => ({
         textAlign: 'left',
         whiteSpace: 'nowrap',
         overflow: 'hidden',
-        animation: '$slideLeftToRight 10s linear infinite',
     },
-    '@keyframes slideLeftToRight': {
+    slideLeftToRight: {
+        animation: '$slideLeftToRightMobile 10s linear infinite',
+    },
+    '@keyframes slideLeftToRightMobile': {
         '0%': {
             transform: 'translateX(90%)',
         },
@@ -49,21 +52,20 @@ const useStylesMobile = makeStyles((themeMoving) => ({
     },
 }));
 
-export const MovingTextPc = ({ text, size }) => {
+export const MovingTextPc = ({ text }) => {
     const classes = useStylesPc();
     return (
-        <Typography className={classes.movingText}>
+        <Typography className={`${classes.movingText} ${classes.slideLeftToRight}`}>
             {text}
         </Typography>
     );
 };
 
-export const MovingTextMobile = ({ text, size }) => {
+export const MovingTextMobile = ({ text }) => {
     const classes = useStylesMobile();
     return (
-        <Typography className={classes.movingText}>
+        <Typography className={`${classes.movingText} ${classes.slideLeftToRight}`}>
             {text}
         </Typography>
     );
 };
-
