@@ -1,4 +1,4 @@
-import { Box, Menu, styled, Toolbar, Typography } from "@mui/material";
+import { Box, Menu, styled, Toolbar, Typography, Button } from "@mui/material";
 
 // Navbar components
 
@@ -94,8 +94,28 @@ export const TitleBox = styled(Box)(({ theme }) => ({
     margin: '50px 0 0 0'
 }));
 
+const ArticleBox = styled(Box)(({ theme }) => ({
+    backgroundColor: "#2b2b2b",
+    color: "#FFFFFF",
+    paddingLeft: theme.spacing(10),
+    paddingRight: theme.spacing(2),
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center", // Add this line to center the content horizontally
+    height: '150px', // set the height to be larger than text height
+}));
+
 export const TitleTypography = styled(Typography)(({ theme }) => ({
     fontWeight: 'bold',
+    marginBottom: theme.spacing(2),
+    marginTop: theme.spacing(2),
+    textAlign: 'left',
+}));
+
+export const AnnounceText = styled(Typography)(({ theme }) => ({
+    fontWeight: 'bold',
+    fontSize: '20px',
     marginBottom: theme.spacing(2),
     marginTop: theme.spacing(2),
     textAlign: 'left',
@@ -122,6 +142,29 @@ export const ServiceTitle = () => {
                     will be given after contact.
                 </Typography>
             </TitleBox>
+            <TitleDivider />
+        </div>
+    );
+};
+
+export const ArticlesTittle = () => {
+    return (
+        <div className="ArticlesTittle" sx={{ margin: '50px 0 0 0' }}>
+            <TitleDivider />
+            <ArticleBox>
+                <AnnounceText >
+                    Subscribe to my official Medium Page!
+                </AnnounceText>
+                <Button variant="contained" href={"https://medium.com/@devscrooge"} target="_blank" s sx={{
+                    borderRadius: 2,
+                    border: '2px solid yellow',
+
+                    boxShadow: '0px 0px 20px 1px rgba(255, 255, 255, 0.2)',
+                    margin: '0 0 10px 0'
+                }}>
+                    Subscribe
+                </Button>
+            </ArticleBox>
             <TitleDivider />
         </div>
     );
