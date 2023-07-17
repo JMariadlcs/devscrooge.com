@@ -5,6 +5,7 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 import CircularImage from './Utils/HomeImage'
 import HomeButtons from './Utils/HomeButtons'
 import ProductsPage from './Products'
+import { MovingTextPc } from "./Custom/MovingText";
 
 const Home = () => {
     const theme = useTheme();
@@ -60,6 +61,7 @@ const Home = () => {
             </JMariaBoxMobile>
 
             {/*Text box only shown on everything except mobile*/}
+            <MovingTextPc text={"HIRE A PROFESSIONAL AUDIT FOR SECURING YOUR PROTOCOL!! Twitter DM: @devScrooge"} />
             <JMariaBoxPC className="JMariaInfoBlock" sx={{ display: { xs: 'none', lg: 'flex', xl: 'flex', md: 'flex', sm: 'flex' }, alignItems: 'center' }}>
                 <CircularImage src="../assets/scrooge.png" sx={{ width: 200, height: 200, marginRight: '2rem' }} padding="0 50px 0 0" />
                 <Box className="JMariaInfoText" padding="0 0 0 50px">

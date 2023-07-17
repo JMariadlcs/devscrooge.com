@@ -2,16 +2,19 @@ import React from 'react';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 
-const useStyles = makeStyles((theme) => ({
+const useStylesPc = makeStyles((theme) => ({
     movingText: {
+        color: 'yellow',
+        fontFamily: "'Roboto', sans-serif",
         fontWeight: 'bold',
         fontSize: '20px',
         marginBottom: theme.spacing(2),
-        marginTop: theme.spacing(2),
+        padding: '20px 0 0 0',
         textAlign: 'left',
         whiteSpace: 'nowrap',
         overflow: 'hidden',
-        animation: '$slideLeftToRight 5s linear infinite',
+        animation: '$slideLeftToRight 20s linear infinite',
+
     },
     '@keyframes slideLeftToRight': {
         '0%': {
@@ -23,8 +26,31 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-const MovingText = ({ text }) => {
-    const classes = useStyles();
+const useStylesMobile = makeStyles((theme) => ({
+    movingText: {
+        color: 'yellow',
+        fontFamily: "'Roboto', sans-serif",
+        fontWeight: 'bold',
+        fontSize: '15px',
+        marginBottom: theme.spacing(2),
+        padding: '20px 0 0 0',
+        textAlign: 'left',
+        whiteSpace: 'nowrap',
+        overflow: 'hidden',
+        animation: '$slideLeftToRight 10s linear infinite',
+    },
+    '@keyframes slideLeftToRight': {
+        '0%': {
+            transform: 'translateX(90%)',
+        },
+        '100%': {
+            transform: 'translateX(0%)',
+        },
+    },
+}));
+
+export const MovingTextPc = ({ text, size }) => {
+    const classes = useStylesPc();
     return (
         <Typography className={classes.movingText}>
             {text}
@@ -32,4 +58,12 @@ const MovingText = ({ text }) => {
     );
 };
 
-export default MovingText;
+export const MovingTextMobile = ({ text, size }) => {
+    const classes = useStylesMobile();
+    return (
+        <Typography className={classes.movingText}>
+            {text}
+        </Typography>
+    );
+};
+
