@@ -13,6 +13,8 @@ export const MenuPC = styled(Box)(({ theme }) => ({
     gap: "10px",
     [theme.breakpoints.up("sm")]: {
         display: "flex",
+        justifyContent: "center",
+        width: "100%",
     },
 }));
 
