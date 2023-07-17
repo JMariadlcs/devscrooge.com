@@ -57,7 +57,7 @@ const useStylesMobile = makeStyles((themeMoving) => ({
 export const MovingTextPc = ({ text }) => {
     const classes = useStylesPc();
     return (
-        <Typography className={`${classes.movingText} ${classes.slideLeftToRight}`}>
+        <Typography className={`${classes.movingText} ${classes.slideLeftToRight} custom-moving-text`}>
             {text}
         </Typography>
     );
@@ -66,7 +66,7 @@ export const MovingTextPc = ({ text }) => {
 export const MovingTextMobile = ({ text }) => {
     const classes = useStylesMobile();
     return (
-        <Typography className={`${classes.movingText} ${classes.slideLeftToRight}`}>
+        <Typography className={`${classes.movingText} ${classes.slideLeftToRight} custom-moving-text`}>
             {text}
         </Typography>
     );
