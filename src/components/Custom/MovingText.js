@@ -2,13 +2,13 @@ import React from 'react';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 
-const useStylesPc = makeStyles((theme) => ({
+const useStylesPc = makeStyles((themeMoving) => ({
     movingText: {
         color: 'yellow',
         fontFamily: "'Roboto', sans-serif",
         fontWeight: 'bold',
         fontSize: '20px',
-        marginBottom: theme.spacing(2),
+        marginBottom: themeMoving.spacing(2),
         padding: '20px 0 0 0',
         textAlign: 'left',
         whiteSpace: 'nowrap',
