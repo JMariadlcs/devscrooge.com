@@ -1,4 +1,5 @@
 import { Box, Menu, styled, Toolbar, Typography, Button } from "@mui/material";
+import { useNavigate } from 'react-router-dom';
 
 // Navbar components
 
@@ -168,6 +169,38 @@ export const ArticlesTittle = () => {
         </div>
     );
 };
+
+export const ShortCutDeepDives = () => {
+    const navigate = useNavigate();
+
+    const handleClick = () => {
+        navigate('/deepdives');
+        window.scrollTo(0, 0);
+    }
+    return (
+        <div className="ArticlesTittle" sx={{ margin: '50px 0 0 0' }}>
+       
+            <ArticleBox>
+                <AnnounceText >
+                    Learn the most common blockchain vulnerabilities
+                </AnnounceText>
+                <Typography>
+                    Access 'Deep Dives' and learn in deep about Slippage, Oracle Manipulation, Signature Malleability...
+                </Typography>
+                <Button variant="contained" onClick={handleClick} s sx={{
+                    borderRadius: 2,
+                    border: '2px solid yellow',
+
+                    boxShadow: '0px 0px 20px 1px rgba(255, 255, 255, 0.2)',
+                    margin: '0 0 10px 0'
+                }}>
+                    ACCESS
+                </Button>
+            </ArticleBox>
+          
+        </div>
+    );
+}
 
 
 // Products 

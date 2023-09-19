@@ -2,7 +2,6 @@ import { Box, Typography, Button, styled } from "@mui/material"
 import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { StyledBox } from "../Custom/CustomComponents"
-import { BannerMedium } from "../Utils/MediumBanner";
 import { useNavigate } from 'react-router-dom';
 
 const LearningResourcesComponent = () => {
@@ -17,7 +16,7 @@ const LearningResourcesComponent = () => {
         flexGrow: '0',
         flexDirection: 'column',
         margin: '10px',
-        height: '470px',
+        height: '300px',
         maxWidth: '25%',
         padding: isXlScreen ? '0' : ' 0',
         width: '100%',
@@ -36,8 +35,13 @@ const LearningResourcesComponent = () => {
         },
     }));
 
-    const handleClick = () => {
+    const handleClickArticles = () => {
         navigate('/articles');
+        window.scrollTo(0, 0);
+    };
+
+    const handleClickDeep = () => {
+        navigate('/deepdives');
         window.scrollTo(0, 0);
     };
     return (
@@ -48,9 +52,9 @@ const LearningResourcesComponent = () => {
                 ALL ARTICLES
             </Typography>
             <Box sx={{ display: 'flex', alignItems: 'center', flexDirection: 'column' }}>
-            <BannerMedium src={"medium0"} />
+          
                 <Box sx={{ display: 'flex', alignItems: 'center', flexDirection: 'row' }}>
-                    <Button variant="contained" onClick={handleClick} s sx={{
+                    <Button variant="contained" onClick={handleClickArticles} s sx={{
                         borderRadius: 2,
                         border: '1px solid rgba(27, 123, 236, 1)',
                         boxShadow: '0px 0px 20px 1px rgba(255, 255, 255, 0.2)',
@@ -62,7 +66,7 @@ const LearningResourcesComponent = () => {
                 </Box>
                 <Box sx={{ ml: 2 }} >
                     <Typography color="textPrimary" variant="body1" component="p" gutterBottom margin="20px 0 10px 0">
-                        <span style={{ color: 'white' }}>&bull;</span> Code review
+                        <span style={{ color: 'white' }}></span> Access all the articles for learning about blockchain security, common vulnerabilities, and best practices.
                     </Typography>
                     
                 </Box>
@@ -74,9 +78,8 @@ const LearningResourcesComponent = () => {
                 DEEP DIVES
             </Typography>
             <Box sx={{ display: 'flex', alignItems: 'center', flexDirection: 'column' }}>
-            <BannerMedium src={"medium0"} />
                 <Box sx={{ display: 'flex', alignItems: 'center', flexDirection: 'row' }}>
-                    <Button variant="contained" onClick={handleClick} s sx={{
+                    <Button variant="contained" onClick={handleClickDeep} s sx={{
                         borderRadius: 2,
                         border: '1px solid rgba(27, 123, 236, 1)',
                         boxShadow: '0px 0px 20px 1px rgba(255, 255, 255, 0.2)',
@@ -88,7 +91,7 @@ const LearningResourcesComponent = () => {
                 </Box>
                 <Box sx={{ ml: 2 }} >
                     <Typography color="textPrimary" variant="body1" component="p" gutterBottom margin="20px 0 10px 0">
-                        <span style={{ color: 'white' }}>&bull;</span> Code review
+                        <span style={{ color: 'white' }}></span> Access a compilation of blockchain basics articles to learn everything you need to know about the main web3 security topics.
                     </Typography>
                     
                 </Box>

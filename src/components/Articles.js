@@ -4,8 +4,10 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 import { StyledBox } from "./Custom/CustomComponents";
 import { BannerMedium } from "./Utils/MediumBanner";
 import { ArticlesTittle } from "./Custom/CustomComponents";
+import { useNavigate } from 'react-router-dom';
 
 const ArticlesPage = () => {
+    const navigate = useNavigate();
     const theme = useTheme();
     const isXlScreen = useMediaQuery(theme.breakpoints.up('xl'));
 
@@ -35,11 +37,41 @@ const ArticlesPage = () => {
         },
     }));
 
+    const handleClick = () => {
+        navigate('/deepdives');
+        window.scrollTo(0, 0);
+    }
+
     return (
         <Box className="home-box" sx={{ backgroundColor: 'primary.main' }} margin="-25px 0 0 0">
             <ArticlesTittle />
+            
+            
             <Box className="home-box" sx={{ backgroundColor: 'primary.main', height: '140vh' }} padding='0 0 150px 0' margin="-25px 0 0 0">
                 <StyledBox className="home-hire-box" margin="20px 0 100px 0" padding="0px 200px">
+                <ArticleBox className="home-buy-code4arena101-box">
+                        <Typography variant="h5" component="h2" gutterBottom margin='30px 0 20px 0' align="center" alignSelf="center" fontWeight='bold' color='yellow'>
+                        Learn the most common blockchain vulnerabilities
+                        </Typography>
+                        <Box sx={{ display: 'flex', alignItems: 'center', flexDirection: 'column' }}>
+                            <Button variant="contained" onClick={handleClick} s sx={{
+                                borderRadius: 2,
+                                border: '1px solid yellow',
+                                boxShadow: '0px 0px 20px 1px rgba(255, 255, 255, 0.2)',
+                                margin: '0 0 10px 0'
+                            }}>
+                                Read
+                            </Button>
+
+
+                            <Box sx={{ ml: 2, margin: '0 0 10px 0' }} >
+                                <Typography color="textPrimary" variant="body1" component="p" gutterBottom margin="20px 0 10px 0">
+                                    <span style={{ color: 'white' }}></span>  Access 'Deep Dives' and learn in deep about Slippage, Oracle Manipulation, Signature Malleability...
+                                </Typography>
+                            </Box>
+                        </Box>
+                    </ArticleBox>
+
                     <ArticleBox className="home-buy-code4arena101-box">
                         <Typography variant="h5" component="h2" gutterBottom color="textSecondary" margin='30px 0 20px 0' align="center" alignSelf="center" fontWeight='bold'>
                             Funding Rate and Perpetual Protocols
