@@ -8,7 +8,7 @@ const mainTheme = createTheme({
             main: '#c9c7c7'
         },
         text: {
-            primary: '#c9c7c7',
+            primary: '#0000000',
             secondary: '#1B7BEC'
         }
     },
