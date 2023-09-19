@@ -8,7 +8,7 @@ import ServicesPage from "./components/Services"
 import ContactPage from "./components/Contact"
 import mainTheme from "./themeConfig"
 import Threadsv2 from "./components/Threadsv2"
-import ProductsPage from "./components/Products"
+// import ProductsPage from "./components/Products"
 import ArticlesPage from "./components/Articles"
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/services" element={<ServicesPage />} />
-                    <Route path="/products" element={<ProductsPage />} />
+                   {/* <Route path="/products" element={<ProductsPage />} /> */}
                     <Route path="/articles" element={<ArticlesPage />} />
                     <Route path="/threads" element={<Threadsv2 />} />
                     <Route path='/contact' element={<ContactPage />} />

@@ -28,9 +28,9 @@ const Navbar = () => {
                     <Link href="/services" color={location.pathname === '/services' ? 'textSecondary' : 'secondary.main'} underline='none' sx={{ display: { xs: "none", sm: "flex", md: "flex", lg: "flex", xl: "flex" }, fontSize: 20 }}>
                         Services
                     </Link>
-                    <Link href="/products" color={location.pathname === '/products' ? 'textSecondary' : 'secondary.main'} underline='none' sx={{ display: { xs: "none", sm: "flex", md: "flex", lg: "flex", xl: "flex" }, fontSize: 20 }}>
+                   {/* <Link href="/products" color={location.pathname === '/products' ? 'textSecondary' : 'secondary.main'} underline='none' sx={{ display: { xs: "none", sm: "flex", md: "flex", lg: "flex", xl: "flex" }, fontSize: 20 }}>
                         Products
-                    </Link>
+                    </Link> */}
                     <Link href="/articles" color={location.pathname === '/articles' ? 'textSecondary' : 'secondary.main'} underline='none' sx={{ display: { xs: "none", sm: "flex", md: "flex", lg: "flex", xl: "flex" }, fontSize: 20 }}>
                         Articles
                     </Link>
@@ -72,12 +72,12 @@ const Navbar = () => {
                     padding: "0 0 0 10px",
                     margin: "0 8px 8px 0"
                 }}>Services</Link>
-                <Link href="/products" underline='none' sx={{
+                {/*<Link href="/products" underline='none' sx={{
                     display: "block",
                     color: "black",
                     padding: "0 0 0 10px",
                     margin: "0 8px 8px 0"
-                }}>Products</Link>
+                }}>Products</Link> */}
                 <Link href="/articles" underline='none' sx={{
                     display: "block",
                     color: "black",
