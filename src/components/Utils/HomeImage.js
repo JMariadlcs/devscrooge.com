@@ -20,10 +20,10 @@ const useStyles = makeStyles((theme) => ({
 
 
 const AvatarCustom = styled(Avatar)(({ theme }) => ({
-    height: '300px', width: '300px',
+    height: '200px', width: '200px',
     [theme.breakpoints.down('sm')]: {
         display: 'flex',
-        height: '200px', width: '200px'
+        height: '100px', width: '100px'
     },
     [theme.breakpoints.down('xs')]: {
         display: 'flex',

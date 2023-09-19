@@ -33,7 +33,7 @@ export const MenuMobile = styled(Menu)(({ theme }) => ({
 export const JMariaBoxPC = styled(Box)(({ theme }) => ({
     padding: "100px 30px 100px 50px",
     [theme.breakpoints.up("xl")]: {
-        padding: "100px 300px 100px 500px",
+        padding: "50px 200px 100px 300px",
         display: "none",
     },
 }));
@@ -74,9 +74,8 @@ export const StyledBox = styled(Box)(({ theme }) => ({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    padding: '0px 200px 50px 200px',
+    margin: '0, 20px, 0, 20px',
     flexWrap: 'wrap',
-    margin: '0'
 }));
 
 

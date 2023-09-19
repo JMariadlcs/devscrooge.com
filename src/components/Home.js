@@ -4,7 +4,7 @@ import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import CircularImage from './Utils/HomeImage'
 import HomeButtons from './Utils/HomeButtons'
-import ProductsPage from './Products'
+// import ProductsPage from './Products'
 import { MovingTextPc } from "./Custom/MovingText";
 
 const Home = () => {
@@ -18,10 +18,10 @@ const Home = () => {
         boxShadow: '0px 0px 20px 1px rgba(255, 255, 255, 0.2)',
         flexGrow: '0',
         flexDirection: 'column',
-        margin: '50px -20px 10px 0px', // Decreased margin here
+        margin: '10px',
         height: '470px',
-        maxWidth: '30%',
-        padding: isXlScreen ? '0 100px' : ' 0 50px',
+        maxWidth: '25%',
+        padding: isXlScreen ? '0' : ' 0',
         width: '100%',
         borderRadius: 10,
         [theme.breakpoints.down('lg')]: {
@@ -52,10 +52,6 @@ const Home = () => {
                     <Typography color="textPrimary" margin='0 0 20px 0' fontSize='15px'>
                         Due to the hours dedicated to the theoretical study of blockchain technology and my experience as a Blockchain Engineer both designing decentralized application architectures and developing Smart Contracts I am the ideal person with whom to consult - audit - develop your idea in an effective, efficient and secure way.
                     </Typography>
-
-                    <Typography color="textPrimary" margin='0 0 20px 0 ' fontSize='15px'>
-                        Now is the time to join this revolution and discover how blockchain technology can improve your life and your business. Be part of the innovation and join the present of decentralized software.
-                    </Typography>
                     <HomeButtons />
                 </Box>
             </JMariaBoxMobile>
@@ -63,7 +59,7 @@ const Home = () => {
             {/*Text box only shown on everything except mobile*/}
             <MovingTextPc text={"HIRE A PROFESSIONAL AUDIT FOR SECURING YOUR PROTOCOL!! Twitter DM: @devScrooge"} />
             <JMariaBoxPC className="JMariaInfoBlock" sx={{ display: { xs: 'none', lg: 'flex', xl: 'flex', md: 'flex', sm: 'flex' }, alignItems: 'center' }}>
-                <CircularImage src="../assets/scrooge.png" sx={{ width: 200, height: 200, marginRight: '2rem' }} padding="0 50px 0 0" />
+                <CircularImage src="../assets/scrooge.png" sx={{ width: 100, height: 100, marginRight: '2rem' }} padding="0 50px 0 0" />
                 <Box className="JMariaInfoText" padding="0 0 0 50px">
                     <Typography color="textPrimary">Blockchain Security Researcher and Engineer</Typography>
                     <Typography color='white' fontSize='40px' fontWeight='bold' margin='0 0 20px 0'>devScrooge</Typography>
@@ -72,9 +68,6 @@ const Home = () => {
                     </Typography>
                     <Typography color="textPrimary" margin='0 0 20px 0 ' fontSize='15px'>
                         Due to the hours dedicated to the theoretical study of blockchain technology and my experience as a Blockchain Engineer both designing decentralized application architectures and developing Smart Contracts I am the ideal person with whom to consult - audit - develop your idea in an effective, efficient and secure way.
-                    </Typography>
-                    <Typography color="textPrimary" margin='0 0 20px 0' fontSize='15px'>
-                        Now is the time to join this revolution and discover how blockchain technology can improve your life and your business. Be part of the innovation and join the present of decentralized software.
                     </Typography>
                     <HomeButtons />
                 </Box>
@@ -268,10 +261,11 @@ const Home = () => {
                 */}
             </StyledBox>
 
-            {/*ProductsBox*/}
+            {/*ProductsBox
             <Typography color="white" fontSize='20px' fontWeight='bold' margin="0 0 0px 150px">Products</Typography>
             <Divider />
             <ProductsPage />
+            */}
         </Box >
 
     )

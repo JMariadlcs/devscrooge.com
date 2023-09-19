@@ -1,13 +1,13 @@
 import { Button, Box } from '@mui/material';
-import CV from '../../Documents/CV.pdf'
+// import CV from '../../Documents/CV.pdf'
 
-const blueButtonStyle = {
+/* const blueButtonStyle = {
     color: 'white',
     backgroundColor: '#424242',
     borderColor: '#1B7BEC',
     borderRadius: '20px',
     margin: '10px'
-};
+}; */
 
 const whiteButtonStyle = {
     color: 'white',
@@ -22,14 +22,14 @@ const HomeButtons = () => {
 
     return (
         <Box sx={{ display: 'flex', justifyContent: 'center' }}>
-            <Button
+            {/*<Button
                 variant="outlined"
                 href={CV}
                 target="_blank"
                 style={blueButtonStyle}
             >
                 Download CV
-            </Button>
+            </Button>*/}
             <Button
                 variant="outlined"
                 href={`mailto:${email}`}
