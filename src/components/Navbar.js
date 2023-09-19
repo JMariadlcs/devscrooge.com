@@ -8,7 +8,7 @@ const Navbar = () => {
     const location = useLocation();
 
     return (
-        <AppBar position="sticky">
+        <AppBar position="sticky" sx={{ background: 'radial-gradient(circle, #000000, #0f0109, #140415, #130920, #03102c)' }}>
             <StyledToolbar>
                 <Button href="/" variant="h6" sx={{ display: { xs: "none", sm: "block" }, flexDirection: 'row', fontWeight: 'bold' }}>
                     @devScrooge

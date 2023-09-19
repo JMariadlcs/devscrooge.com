@@ -4,7 +4,7 @@ import { LinkedIn, Twitter, GitHub, Mail } from '@mui/icons-material';
 const FooterBar = () => {
     return (
         <Box sx={{
-            bgcolor: '#222222',
+            background: 'radial-gradient(circle, #000000, #0f0109, #140415, #130920, #03102c)' ,
             boxShadow: '0px -5px 5px rgba(0, 0, 0, 0.2)',
             py: 3,
             px: 2,
