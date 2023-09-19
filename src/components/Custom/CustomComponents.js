@@ -31,9 +31,9 @@ export const MenuMobile = styled(Menu)(({ theme }) => ({
 // Home
 
 export const JMariaBoxPC = styled(Box)(({ theme }) => ({
-    padding: "100px 30px 100px 50px",
+    padding: "100px 30px 50px 50px",
     [theme.breakpoints.up("xl")]: {
-        padding: "50px 200px 100px 300px",
+        padding: "50px 200px 20px 300px",
         display: "none",
     },
 }));
