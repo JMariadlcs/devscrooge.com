@@ -34,9 +34,12 @@ const Navbar = () => {
                     <Link href="/articles" color={location.pathname === '/articles' ? 'textSecondary' : 'secondary.main'} underline='none' sx={{ display: { xs: "none", sm: "flex", md: "flex", lg: "flex", xl: "flex" }, fontSize: 20 }}>
                         Articles
                     </Link>
-                    <Link href="/threads" color={location.pathname === '/threads' ? 'textSecondary' : 'secondary.main'} underline='none' sx={{ display: { xs: "none", sm: "flex", md: "flex", lg: "flex", xl: "flex" }, fontSize: 20 }}>
-                        Threads
+                    <Link href="/deepdives" color={location.pathname === '/deepdives' ? 'textSecondary' : 'secondary.main'} underline='none' sx={{ display: { xs: "none", sm: "flex", md: "flex", lg: "flex", xl: "flex" }, fontSize: 20 }}>
+                        Deep dives
                     </Link>
+                     {/*<Link href="/threads" color={location.pathname === '/threads' ? 'textSecondary' : 'secondary.main'} underline='none' sx={{ display: { xs: "none", sm: "flex", md: "flex", lg: "flex", xl: "flex" }, fontSize: 20 }}>
+                        Threads
+                    </Link>*/}
                     <Link href="/contact" color={location.pathname === '/contact' ? 'textSecondary' : 'secondary.main'} underline='none' sx={{ display: { xs: "none", sm: "flex", md: "flex", lg: "flex", xl: "flex" }, fontSize: 20 }}>
                         Contact
                     </Link>
@@ -84,12 +87,18 @@ const Navbar = () => {
                     padding: "0 0 0 10px",
                     margin: "0 8px 8px 0"
                 }}>Articles</Link>
-                <Link href="/threads" underline='none' sx={{
+                <Link href="/deepdives" underline='none' sx={{
                     display: "block",
                     color: "black",
                     padding: "0 0 0 10px",
                     margin: "0 8px 8px 0"
-                }}>Threads</Link>
+                }}>Deep dives</Link>
+                {/* <Link href="/threads" underline='none' sx={{
+                    display: "block",
+                    color: "black",
+                    padding: "0 0 0 10px",
+                    margin: "0 8px 8px 0"
+                }}>Threads</Link>*/}
                 <Link href="/contact" underline='none' sx={{
                     display: "block",
                     color: "black",
