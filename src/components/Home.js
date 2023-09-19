@@ -3,7 +3,7 @@ import { JMariaBoxPC, JMariaBoxMobile } from "./Custom/CustomComponents"
 import CircularImage from './Utils/HomeImage'
 import HomeButtons from './Utils/HomeButtons'
 import HireComponent from "./subcomponents/HireComponent";
-// import ProductsPage from './Products'
+import LearningResourcesComponent from "./subcomponents/LearningResourcesComponent"
 import { MovingTextPc } from "./Custom/MovingText";
 
 const Home = () => {
@@ -47,8 +47,10 @@ const Home = () => {
             <Typography color="white" fontSize='20px' fontWeight='bold' margin="0 0 0px 150px">Hire</Typography>
             <Divider />
             <HireComponent/>
-          
-    
+
+            <Typography color="white" fontSize='20px' fontWeight='bold' margin="0 0 0px 150px">Security resources</Typography>
+            <Divider />
+            <LearningResourcesComponent/>
         </Box >
 
     )

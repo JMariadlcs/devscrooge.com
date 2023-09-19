@@ -3,7 +3,7 @@ import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { StyledBox } from "../Custom/CustomComponents"
 
-const HireComponent = () => {
+const LearningResourcesComponent = () => {
     const theme = useTheme();
     const isXlScreen = useMediaQuery(theme.breakpoints.up('xl'));
     const HireBox = styled(Box)(({ theme }) => ({
@@ -164,4 +164,4 @@ const HireComponent = () => {
 )
 }
 
-export default HireComponent
+export default LearningResourcesComponent
