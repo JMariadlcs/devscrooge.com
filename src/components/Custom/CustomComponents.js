@@ -11,7 +11,7 @@ export const StyledToolbar = styled(Toolbar)({
 export const MenuPC = styled(Box)(({ theme }) => ({
     display: "none",
     alignItems: "center",
-    gap: "10px",
+    gap: "20px",
     [theme.breakpoints.up("sm")]: {
         display: "flex",
         justifyContent: "center",

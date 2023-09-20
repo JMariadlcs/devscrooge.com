@@ -22,28 +22,70 @@ const Navbar = () => {
                     MENU
                 </Typography>
                 <MenuPC>
-                    <Link href="/" color={location.pathname === '/' ? 'textSecondary' : 'secondary.main'} underline='none' sx={{ display: { xs: "none", sm: "flex", md: "flex", lg: "flex", xl: "flex" }, fontSize: 20, fontWeight: 'bold' }}>
+                    <Link href="/" color={location.pathname === '/' ? 'textSecondary' : 'secondary.main'} underline='none' sx={{
+                        display: {
+                            xs: "none", sm: "flex", md: "flex", lg: "flex", xl: "flex", '&:hover': {
+                                textShadow: "#FC0 1px 0 10px",
+                                transform: 'translateY(-5px)',
+                            },
+                        }, fontSize: 20, fontWeight: 'bold'
+                    }}>
                         Home
                     </Link>
-                    <Link href="/services" color={location.pathname === '/services' ? 'textSecondary' : 'secondary.main'} underline='none' sx={{ display: { xs: "none", sm: "flex", md: "flex", lg: "flex", xl: "flex" }, fontSize: 20, fontWeight: 'bold' }}>
+                    <Link href="/services" color={location.pathname === '/services' ? 'textSecondary' : 'secondary.main'} underline='none' sx={{
+                        display: {
+                            xs: "none", sm: "flex", md: "flex", lg: "flex", xl: "flex", '&:hover': {
+                                textShadow: "#FC0 1px 0 10px",
+                                transform: 'translateY(-5px)',
+                            },
+                        }, fontSize: 20, fontWeight: 'bold'
+                    }}>
                         Services
                     </Link>
-                    <Link href="/portfolio" color={location.pathname === '/portfolio' ? 'textSecondary' : 'secondary.main'} underline='none' sx={{ display: { xs: "none", sm: "flex", md: "flex", lg: "flex", xl: "flex" }, fontSize: 20, fontWeight: 'bold' }}>
+                    <Link href="/portfolio" color={location.pathname === '/portfolio' ? 'textSecondary' : 'secondary.main'} underline='none' sx={{
+                        display: {
+                            xs: "none", sm: "flex", md: "flex", lg: "flex", xl: "flex", '&:hover': {
+                                textShadow: "#FC0 1px 0 10px",
+                                transform: 'translateY(-5px)',
+                            },
+                        }, fontSize: 20, fontWeight: 'bold'
+                    }}>
                         Portfolio
                     </Link>
-                   {/* <Link href="/products" color={location.pathname === '/products' ? 'textSecondary' : 'secondary.main'} underline='none' sx={{ display: { xs: "none", sm: "flex", md: "flex", lg: "flex", xl: "flex" }, fontSize: 20 }}>
+                    {/* <Link href="/products" color={location.pathname === '/products' ? 'textSecondary' : 'secondary.main'} underline='none' sx={{ display: { xs: "none", sm: "flex", md: "flex", lg: "flex", xl: "flex" }, fontSize: 20 }}>
                         Products
                     </Link> */}
-                    <Link href="/articles" color={location.pathname === '/articles' ? 'textSecondary' : 'secondary.main'} underline='none' sx={{ display: { xs: "none", sm: "flex", md: "flex", lg: "flex", xl: "flex" }, fontSize: 20, fontWeight: 'bold' }}>
+                    <Link href="/articles" color={location.pathname === '/articles' ? 'textSecondary' : 'secondary.main'} underline='none'sx={{
+                        display: {
+                            xs: "none", sm: "flex", md: "flex", lg: "flex", xl: "flex", '&:hover': {
+                                textShadow: "#FC0 1px 0 10px",
+                                transform: 'translateY(-5px)',
+                            },
+                        }, fontSize: 20, fontWeight: 'bold'
+                    }}>
                         Articles
                     </Link>
-                    <Link href="/deepdives" color={location.pathname === '/deepdives' ? 'textSecondary' : 'secondary.main'} underline='none' sx={{ display: { xs: "none", sm: "flex", md: "flex", lg: "flex", xl: "flex" }, fontSize: 20, fontWeight: 'bold' }}>
+                    <Link href="/deepdives" color={location.pathname === '/deepdives' ? 'textSecondary' : 'secondary.main'} underline='none' sx={{
+                        display: {
+                            xs: "none", sm: "flex", md: "flex", lg: "flex", xl: "flex", '&:hover': {
+                                textShadow: "#FC0 1px 0 10px",
+                                transform: 'translateY(-5px)',
+                            },
+                        }, fontSize: 20, fontWeight: 'bold'
+                    }}>
                         Deep dives
                     </Link>
-                     {/*<Link href="/threads" color={location.pathname === '/threads' ? 'textSecondary' : 'secondary.main'} underline='none' sx={{ display: { xs: "none", sm: "flex", md: "flex", lg: "flex", xl: "flex" }, fontSize: 20 }}>
+                    {/*<Link href="/threads" color={location.pathname === '/threads' ? 'textSecondary' : 'secondary.main'} underline='none' sx={{ display: { xs: "none", sm: "flex", md: "flex", lg: "flex", xl: "flex" }, fontSize: 20 }}>
                         Threads
                     </Link>*/}
-                    <Link href="/contact" color={location.pathname === '/contact' ? 'textSecondary' : 'secondary.main'} underline='none' sx={{ display: { xs: "none", sm: "flex", md: "flex", lg: "flex", xl: "flex" }, fontSize: 20, fontWeight: 'bold' }}>
+                    <Link href="/contact" color={location.pathname === '/contact' ? 'textSecondary' : 'secondary.main'} underline='none' sx={{
+                        display: {
+                            xs: "none", sm: "flex", md: "flex", lg: "flex", xl: "flex", '&:hover': {
+                                textShadow: "#FC0 1px 0 10px",
+                                transform: 'translateY(-5px)',
+                            },
+                        }, fontSize: 20, fontWeight: 'bold'
+                    }}>
                         Contact
                     </Link>
                 </MenuPC>
