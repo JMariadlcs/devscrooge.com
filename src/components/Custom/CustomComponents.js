@@ -130,9 +130,9 @@ export const TitleDivider = styled(Box)(({ theme }) => ({
 
 export const ServiceTitle = () => {
     return (
-        <div className="servicesTittle" sx={{ margin: '50px 0 0 0' }}>
+        <div className="servicesTittle"  sx={{ margin: '50px 0 0 0', height: '50px' }}>
             <TitleDivider />
-            <TitleBox>
+            <TitleBox height= '50px' sx={{background: 'radial-gradient(circle, #000000, #0e0006, #130012, #11001c, #010127)' }}>
                 <TitleTypography variant="h4" component="h1">
                     Services
                 </TitleTypography>
