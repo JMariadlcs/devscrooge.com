@@ -9,7 +9,7 @@ import { MovingTextPc } from "./Custom/MovingText";
 const Home = () => {
 
     return (
-        <Box className="home-box" sx={{ background: 'radial-gradient(circle, #000000, #0f0109, #140415, #130920, #03102c)' }} padding="0 0 20px 0">
+        <Box className="home-box" sx={{ background: 'radial-gradient(circle, #000000, #0e0006, #130012, #11001c, #010127);' }} padding="0 0 20px 0">
             {/*Text box only shown on mobile*/}
             <JMariaBoxMobile className="JMariaInfoBlock">
                 <CircularImage src="../assets/scrooge.png" sx={{ width: 20, height: 20, marginRight: '2rem', marginLeft: '2rem' }} padding="0 50px 0 0" />

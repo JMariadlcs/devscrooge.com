@@ -28,7 +28,7 @@ const HireComponent = () => {
             width: '500px',
         },
         '&:hover': {
-            boxShadow: '0px 0px 30px 3px rgba(255, 255, 255, 0.3)',
+            boxShadow: '0px 0px 30px 3px #6F005B',
             transform: 'translateY(-5px)',
         },
     }));
@@ -36,14 +36,14 @@ const HireComponent = () => {
 
     <StyledBox className="home-hire-box" margin="20px 0 50px 0" padding="0px 200px">
         <HireBox className="home-hire-simpleAudit-box" >
-            <Typography variant="h5" component="h2" gutterBottom color="textSecondary" margin='50px 0 20px 0' align="center" alignSelf="center" fontWeight='bold'>
+            <Typography variant="h5" component="h2" gutterBottom color="textSecondary" margin='50px 0 20px 0' align="center" alignSelf="center" fontWeight='bold' sx={{textShadow:"#FC0 1px 0 10px"}}>
                 DEEP DIVE AUDIT
             </Typography>
             <Box sx={{ display: 'flex', alignItems: 'center', flexDirection: 'column' }}>
                 <Box sx={{ display: 'flex', alignItems: 'center', flexDirection: 'row' }}>
                     <Button variant="contained" href={"https://docs.google.com/forms/d/e/1FAIpQLSees9RL4-zXmWkWsY_tZ4-52JL1AoGjYH_1ajjuizNDV5PFdg/viewform?usp=sf_link"} target="_blank" s sx={{
                         borderRadius: 2,
-                        border: '1px solid rgba(27, 123, 236, 1)',
+                        border: '1px solid #6F005B',
                         boxShadow: '0px 0px 20px 1px rgba(255, 255, 255, 0.2)',
                         margin: '0 5px 0 0'
                     }}>
@@ -51,7 +51,7 @@ const HireComponent = () => {
                     </Button>
                     <Button variant="contained" href={"https://twitter.com/devScrooge"} target="_blank" s sx={{
                         borderRadius: 2,
-                        border: '1px solid rgba(27, 123, 236, 1)',
+                        border: '1px solid #6F005B',
                         boxShadow: '0px 0px 20px 1px rgba(255, 255, 255, 0.2)',
                     }}>
                         DM
@@ -78,14 +78,14 @@ const HireComponent = () => {
         </HireBox>
 
         <HireBox className="home-hire-simpleAudit-box">
-            <Typography variant="h5" component="h2" gutterBottom color="textSecondary" margin='30px 0 20px 0' align="center" alignSelf="center" fontWeight='bold'>
+            <Typography variant="h5" component="h2" gutterBottom color="textSecondary" margin='30px 0 20px 0' align="center" alignSelf="center" fontWeight='bold' sx={{textShadow:"#FC0 1px 0 10px"}}>
                 SMART CONTRACT DEVELOPMENT
             </Typography>
             <Box sx={{ display: 'flex', alignItems: 'center', flexDirection: 'column' }}>
                 <Box sx={{ display: 'flex', alignItems: 'center', flexDirection: 'row' }}>
                     <Button variant="contained" href={"https://docs.google.com/forms/d/e/1FAIpQLSees9RL4-zXmWkWsY_tZ4-52JL1AoGjYH_1ajjuizNDV5PFdg/viewform?usp=sf_link"} target="_blank" s sx={{
                         borderRadius: 2,
-                        border: '1px solid rgba(27, 123, 236, 1)',
+                        border: '1px solid #6F005B',
                         boxShadow: '0px 0px 20px 1px rgba(255, 255, 255, 0.2)',
                         margin: '0 5px 0 0'
                     }}>
@@ -93,7 +93,7 @@ const HireComponent = () => {
                     </Button>
                     <Button variant="contained" href={"https://twitter.com/devScrooge"} target="_blank" s sx={{
                         borderRadius: 2,
-                        border: '1px solid rgba(27, 123, 236, 1)',
+                        border: '1px solid #6F005B',
                         boxShadow: '0px 0px 20px 1px rgba(255, 255, 255, 0.2)',
                     }}>
                         DM
@@ -123,14 +123,14 @@ const HireComponent = () => {
         </HireBox>
 
         <HireBox className="home-hire-consulting-box">
-            <Typography variant="h5" component="h2" gutterBottom color="textSecondary" margin='30px 0 20px 0' align="center" alignSelf="center" fontWeight='bold'>
+            <Typography variant="h5" component="h2" gutterBottom color="textSecondary" margin='30px 0 20px 0' align="center" alignSelf="center" fontWeight='bold' sx={{textShadow:"#FC0 1px 0 10px"}}>
                 CONSULTANCY
             </Typography>
             <Box sx={{ display: 'flex', alignItems: 'center', flexDirection: 'column' }}>
                 <Box sx={{ display: 'flex', alignItems: 'center', flexDirection: 'row' }}>
                     <Button variant="contained" href={"https://docs.google.com/forms/d/e/1FAIpQLSees9RL4-zXmWkWsY_tZ4-52JL1AoGjYH_1ajjuizNDV5PFdg/viewform?usp=sf_link"} target="_blank" s sx={{
                         borderRadius: 2,
-                        border: '1px solid rgba(27, 123, 236, 1)',
+                        border: '1px solid #6F005B',
                         boxShadow: '0px 0px 20px 1px rgba(255, 255, 255, 0.2)',
                         margin: '0 5px 0 0'
                     }}>
@@ -138,7 +138,7 @@ const HireComponent = () => {
                     </Button>
                     <Button variant="contained" href={"https://twitter.com/devScrooge"} target="_blank" s sx={{
                         borderRadius: 2,
-                        border: '1px solid rgba(27, 123, 236, 1)',
+                        border: '1px solid #6F005B',
                         boxShadow: '0px 0px 20px 1px rgba(255, 255, 255, 0.2)',
                     }}>
                         DM

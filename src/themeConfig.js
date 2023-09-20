@@ -9,7 +9,7 @@ const mainTheme = createTheme({
         },
         text: {
             primary: '#FFFFFF',
-            secondary: '#1B7BEC'
+            secondary: '#FFE200'
         }
     },
     typography: {
