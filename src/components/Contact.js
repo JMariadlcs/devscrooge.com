@@ -83,7 +83,6 @@ const ContactPage = () => {
                     sx={{
                         color: 'white',
                         backgroundColor: '#37001C',
-                        border: 2,
                         border: '1px solid #6F005B',
                         boxShadow: '0px 0px 20px 1px #6F005B',
                         borderRadius: '20px',
