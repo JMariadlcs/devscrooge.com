@@ -17,7 +17,7 @@ function App() {
 
     return (
         <ThemeProvider theme={mainTheme}>
-            <Box>
+            <Box sx={{height: '100%', position:'relative', display: 'flex', flexDirection: 'column', justifyContent: 'space-between'}}>
                 <Navbar />
                 <Routes>
                     <Route path="/" element={<Home />} />

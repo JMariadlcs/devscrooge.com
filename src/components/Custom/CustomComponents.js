@@ -150,8 +150,7 @@ export const ServiceTitle = () => {
 export const ArticlesTittle = () => {
     return (
         <div className="ArticlesTittle" sx={{ margin: '50px 0 0 0' }}>
-            <TitleDivider />
-            <ArticleBox sx={{background: 'radial-gradient(circle, #000000, #0e0006, #130012, #11001c, #010127)' }}>
+            <ArticleBox sx={{background: 'radial-gradient(circle, #000000, #0e0006, #130012, #11001c, #010127)', margin: '20px 0 20px 0' }}>
                 <AnnounceText >
                     Subscribe to my official Medium Page!
                 </AnnounceText>
@@ -165,7 +164,6 @@ export const ArticlesTittle = () => {
                     Subscribe
                 </Button>
             </ArticleBox>
-            <TitleDivider />
         </div>
     );
 };
