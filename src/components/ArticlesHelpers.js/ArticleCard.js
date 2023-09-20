@@ -13,7 +13,6 @@ const ArticleCard = (article) => {
         flexDirection: 'column',
         margin: '10px',
         height: '100%',
-        maxWidth: '25%',
         padding: '0 10px 0 10px',
         width: '100%',
         borderRadius: 10,
