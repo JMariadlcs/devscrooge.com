@@ -168,6 +168,27 @@ export const ArticlesTittle = () => {
     );
 };
 
+export const PortfolioTittle = () => {
+    return (
+        <div className="ArticlesTittle" sx={{ margin: '50px 0 0 0' }}>
+            <ArticleBox sx={{background: 'radial-gradient(circle, #000000, #0e0006, #130012, #11001c, #010127)', margin: '20px 0 20px 0' }}>
+                <AnnounceText >
+                    Visit my audits portfolio repo!
+                </AnnounceText>
+                <Button variant="contained" href={"https://github.com/JMariadlcs/audits"} target="_blank" s sx={{
+                    borderRadius: 2,
+                    border: '2px solid yellow',
+
+                    boxShadow: '0px 0px 20px 1px rgba(255, 255, 255, 0.2)',
+                    margin: '0 0 10px 0'
+                }}>
+                    Visit
+                </Button>
+            </ArticleBox>
+        </div>
+    );
+}
+
 export const ShortCutDeepDives = () => {
     const navigate = useNavigate();
 

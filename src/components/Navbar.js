@@ -28,6 +28,9 @@ const Navbar = () => {
                     <Link href="/services" color={location.pathname === '/services' ? 'textSecondary' : 'secondary.main'} underline='none' sx={{ display: { xs: "none", sm: "flex", md: "flex", lg: "flex", xl: "flex" }, fontSize: 20, fontWeight: 'bold' }}>
                         Services
                     </Link>
+                    <Link href="/portfolio" color={location.pathname === '/portfolio' ? 'textSecondary' : 'secondary.main'} underline='none' sx={{ display: { xs: "none", sm: "flex", md: "flex", lg: "flex", xl: "flex" }, fontSize: 20, fontWeight: 'bold' }}>
+                        Portfolio
+                    </Link>
                    {/* <Link href="/products" color={location.pathname === '/products' ? 'textSecondary' : 'secondary.main'} underline='none' sx={{ display: { xs: "none", sm: "flex", md: "flex", lg: "flex", xl: "flex" }, fontSize: 20 }}>
                         Products
                     </Link> */}

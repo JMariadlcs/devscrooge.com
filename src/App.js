@@ -11,6 +11,7 @@ import Threadsv2 from "./components/Threadsv2"
 import DeepDivesPage from "./components/DeepDives"
 // import ProductsPage from "./components/Products"
 import ArticlesPage from "./components/Articles"
+import PortfolioPage from "./components/Portfolio"
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/services" element={<ServicesPage />} />
+                    <Route path="/portfolio" element={<PortfolioPage />} />
                    {/* <Route path="/products" element={<ProductsPage />} /> */}
                     <Route path="/articles" element={<ArticlesPage />} />
                     <Route path="/deepdives" element={<DeepDivesPage />} />
