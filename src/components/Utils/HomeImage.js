@@ -5,8 +5,8 @@ import { Avatar, styled } from "@mui/material";
 
 const useStyles = makeStyles((theme) => ({
     avatar: {
-        border: `10px solid rgba(2, 124, 236, 1)`,
-        boxShadow: theme.shadows[10],
+        border: `10px solid yellow`,
+        boxShadow: '#FC0 1px 0 10px',
         [theme.breakpoints.down('sm')]: {
             border: `7px solid rgba(2, 124, 236, 1)`,
             display: 'flex',
