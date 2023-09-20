@@ -78,7 +78,7 @@ const ArticlesPage = () => {
                             <Button variant="contained" href={"https://medium.com/@devscrooge/funding-rate-and-perpetual-protocols-d0da5ca7a5fb"} target="_blank" s sx={{
                                 borderRadius: 2,
                                 border: '1px solid #6F005B',
-                                boxShadow: '0px 0px 20px 1px rgba(255, 255, 255, 0.2)',
+                                boxShadow: '0px 0px 20px 1px #6F005B',
                                 margin: '0 0 10px 0'
                             }}>
                                 Read
@@ -104,7 +104,7 @@ const ArticlesPage = () => {
                             <Button variant="contained" href={"https://medium.com/@devscrooge/funding-rate-and-perpetual-protocols-d0da5ca7a5fb"} target="_blank" s sx={{
                                 borderRadius: 2,
                                 border: '1px solid #6F005B',
-                                boxShadow: '0px 0px 20px 1px rgba(255, 255, 255, 0.2)',
+                                boxShadow: '0px 0px 20px 1px #6F005B',
                                 margin: '0 0 10px 0'
                             }}>
                                 Read

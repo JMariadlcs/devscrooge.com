@@ -23,7 +23,7 @@ const ContactPage = () => {
                     px: { xs: 2, sm: 5 },
                 }}
             >
-                <Typography variant="h4" sx={{ mb: 3, color: '#1B7BEC' }}>
+                <Typography variant="h4" sx={{ mb: 3, color: 'yellow', textShadow:"#FC0 1px 0 10px" }}>
                     How can I help you?
                 </Typography>
                 <Box sx={{ display: 'flex', alignItems: 'center' }}>
@@ -82,9 +82,10 @@ const ContactPage = () => {
                     variant="contained"
                     sx={{
                         color: 'white',
-                        backgroundColor: '#424242',
+                        backgroundColor: '#37001C',
                         border: 2,
-                        borderColor: '#1B7BEC',
+                        border: '1px solid #6F005B',
+                        boxShadow: '0px 0px 20px 1px #6F005B',
                         borderRadius: '20px',
                         margin: '30px'
                     }}
