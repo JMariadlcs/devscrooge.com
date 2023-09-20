@@ -4,6 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStylesPc = makeStyles((themeMoving) => ({
     movingText: {
+        boxShadow: 'none',
         textShadow:"#FC0 1px 0 10px",
         color: 'yellow',
         fontFamily: "'Roboto', sans-serif",
