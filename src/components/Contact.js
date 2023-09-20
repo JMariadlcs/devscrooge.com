@@ -6,7 +6,7 @@ const ContactPage = () => {
 
 
     return (
-        <Box className="home-box" sx={{ backgroundColor: 'primary.main' }} margin="-25px 0 0 0">
+        <Box height="100%" className="home-box" sx={{ backgroundColor: 'primary.main' }} margin="-25px 0 0 0">
             <ContactTitle></ContactTitle>
             <Box
                 sx={{
@@ -14,8 +14,8 @@ const ContactPage = () => {
                     alignItems: 'center',
                     justifyContent: 'center',
                     flexDirection: 'column',
-                    height: '50vh',
-                    backgroundColor: '#222222',
+                    height: '100%',
+                    background: 'radial-gradient(circle, #000000, #0e0006, #130012, #11001c, #010127)',
                     color: '#c9c7c7',
                     textAlign: 'center',
                     py: 5,

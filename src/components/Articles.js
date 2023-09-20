@@ -47,7 +47,7 @@ const ArticlesPage = () => {
             <Box className="home-box" sx={{ background: 'radial-gradient(circle, #000000, #0e0006, #130012, #11001c, #010127)', height: '100%' }} padding='0 0 150px 0' margin="-25px 0 0 0">
                 <StyledBox className="home-hire-box" margin="20px 0 100px 0" padding="0px 200px">
                 <ArticleBox className="home-buy-code4arena101-box">
-                        <Typography variant="h5" component="h2" gutterBottom margin='30px 0 20px 0' align="center" alignSelf="center" fontWeight='bold' color='yellow'>
+                        <Typography variant="h5" component="h2" gutterBottom margin='30px 0 20px 0' align="center" alignSelf="center" fontWeight='bold' color='yellow' sx={{textShadow:"#FC0 1px 0 10px"}}>
                         Learn the most common blockchain vulnerabilities
                         </Typography>
                         <Box sx={{ display: 'flex', alignItems: 'center', flexDirection: 'column' }}>
@@ -70,7 +70,7 @@ const ArticlesPage = () => {
                     </ArticleBox>
 
                     <ArticleBox className="home-buy-code4arena101-box">
-                        <Typography variant="h5" component="h2" gutterBottom color="textSecondary" margin='30px 0 20px 0' align="center" alignSelf="center" fontWeight='bold'>
+                        <Typography variant="h5" component="h2" gutterBottom color="textSecondary" margin='30px 0 20px 0' align="center" alignSelf="center" fontWeight='bold' sx={{textShadow:"#FC0 1px 0 10px"}}>
                             Funding Rate and Perpetual Protocols
                         </Typography>
                         <BannerMedium src={"medium0"} />
@@ -96,7 +96,7 @@ const ArticlesPage = () => {
                     </ArticleBox>
 
                     <ArticleBox className="home-buy-code4arena101-box">
-                        <Typography variant="h5" component="h2" gutterBottom color="textSecondary" margin='30px 0 20px 0' align="center" alignSelf="center" fontWeight='bold'>
+                        <Typography variant="h5" component="h2" gutterBottom color="textSecondary" margin='30px 0 20px 0' align="center" alignSelf="center" fontWeight='bold' sx={{textShadow:"#FC0 1px 0 10px"}}>
                             Funding Rate and Perpetual Protocols
                         </Typography>
                         <BannerMedium src={"medium0"} />

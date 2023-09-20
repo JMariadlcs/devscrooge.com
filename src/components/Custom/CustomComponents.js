@@ -91,7 +91,7 @@ export const TitleBox = styled(Box)(({ theme }) => ({
     flexDirection: 'column',
     justifyContent: 'center',
     height: '200px', // set the height to be larger than text height
-    margin: '50px 0 0 0'
+    margin: '-5px 0 0 0'
 }));
 
 const ArticleBox = styled(Box)(({ theme }) => ({
@@ -122,7 +122,7 @@ export const AnnounceText = styled(Typography)(({ theme }) => ({
 }));
 
 export const TitleDivider = styled(Box)(({ theme }) => ({
-    backgroundColor: '#252525',
+    background: 'radial-gradient(circle, #000000, #0e0006, #130012, #11001c, #010127)',
     borderBottom: `1px solid ${theme.palette.divider}`,
     marginBottom: theme.spacing(2),
     marginTop: theme.spacing(2),
@@ -226,14 +226,12 @@ export const ProductsTitle = () => {
 
 export const ContactTitle = () => {
     return (
-        <div className="ContactTitle" sx={{ margin: '50px 0 0 0' }}>
-            <TitleDivider />
-            <TitleBox>
+        <div className="ContactTitle" sx={{ margin: '0px 0 0 0' }}>
+            <TitleBox sx={{ background: 'radial-gradient(circle, #000000, #0e0006, #130012, #11001c, #010127)'}}>
                 <TitleTypography variant="h4" component="h1">
                     Contact
                 </TitleTypography>
             </TitleBox>
-            <TitleDivider />
         </div>
     );
 };
