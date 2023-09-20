@@ -11,8 +11,8 @@ const LearningResourcesComponent = () => {
     const HireBox = styled(Box)(({ theme }) => ({
         alignItems: 'center',
         backgroundColor: 'secondary.main',
-        border: '1px solid rgba(255, 255, 255, 0.2)',
-        boxShadow: '0px 0px 20px 1px rgba(255, 255, 255, 0.2)',
+        border: '1px solid #6F005B',
+        boxShadow: '0px 0px 20px 1px #6F005B',
         flexGrow: '0',
         flexDirection: 'column',
         margin: '10px',
@@ -57,7 +57,7 @@ const LearningResourcesComponent = () => {
                     <Button variant="contained" onClick={handleClickArticles} s sx={{
                         borderRadius: 2,
                         border: '1px solid #6F005B',
-                        boxShadow: '0px 0px 20px 1px rgba(255, 255, 255, 0.2)',
+                        boxShadow: '0px 0px 20px 1px #6F005B',
                         margin: '0 5px 0 0'
                     }}>
                         READ
@@ -82,7 +82,7 @@ const LearningResourcesComponent = () => {
                     <Button variant="contained" onClick={handleClickDeep} s sx={{
                         borderRadius: 2,
                         border: '1px solid #6F005B',
-                        boxShadow: '0px 0px 20px 1px rgba(255, 255, 255, 0.2)',
+                        boxShadow: '0px 0px 20px 1px #6F005B',
                         margin: '0 5px 0 0'
                     }}>
                         READ

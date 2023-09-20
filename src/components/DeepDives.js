@@ -12,8 +12,8 @@ const ArticlesPage = () => {
     const ArticleBox = styled(Box)(({ theme }) => ({
         alignItems: 'center',
         backgroundColor: 'secondary.main',
-        border: '1px solid rgba(255, 255, 255, 0.2)',
-        boxShadow: '0px 0px 20px 1px rgba(255, 255, 255, 0.2)',
+        border: '1px solid #6F005B',
+        boxShadow: '0px 0px 20px 1px #6F005B',
         flexGrow: '0',
         flexDirection: 'column',
         margin: '50px -20px 10px 0px', // Decreased margin here
@@ -30,7 +30,7 @@ const ArticlesPage = () => {
             width: '500px',
         },
         '&:hover': {
-            boxShadow: '0px 0px 30px 3px rgba(255, 255, 255, 0.3)',
+            boxShadow: '0px 0px 30px 3px #6F005B',
             transform: 'translateY(-5px)',
         },
     }));
@@ -38,7 +38,7 @@ const ArticlesPage = () => {
     return (
         <Box className="home-box" sx={{ backgroundColor: 'primary.main' }} margin="-25px 0 0 0">
             <ArticlesTittle />
-            <Box className="home-box" sx={{ backgroundColor: 'primary.main', height: '140vh' }} padding='0 0 150px 0' margin="-25px 0 0 0">
+            <Box className="home-box" sx={{background: 'radial-gradient(circle, #000000, #0e0006, #130012, #11001c, #010127)', height: '100%' }} padding='0 0 150px 0' margin="-25px 0 0 0">
                 <StyledBox className="home-hire-box" margin="20px 0 100px 0" padding="0px 200px">
                     <ArticleBox className="home-buy-code4arena101-box">
                         <Typography variant="h5" component="h2" gutterBottom color="textSecondary" margin='30px 0 20px 0' align="center" alignSelf="center" fontWeight='bold'>
@@ -48,8 +48,8 @@ const ArticlesPage = () => {
                         <Box sx={{ display: 'flex', alignItems: 'center', flexDirection: 'column' }}>
                             <Button variant="contained" href={"https://medium.com/@devscrooge/funding-rate-and-perpetual-protocols-d0da5ca7a5fb"} target="_blank" s sx={{
                                 borderRadius: 2,
-                                border: '1px solid rgba(27, 123, 236, 1)',
-                                boxShadow: '0px 0px 20px 1px rgba(255, 255, 255, 0.2)',
+                                border: '1px solid #6F005B',
+                                boxShadow: '0px 0px 20px 1px #6F005B',
                                 margin: '0 0 10px 0'
                             }}>
                                 Read

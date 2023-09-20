@@ -151,7 +151,7 @@ export const ArticlesTittle = () => {
     return (
         <div className="ArticlesTittle" sx={{ margin: '50px 0 0 0' }}>
             <TitleDivider />
-            <ArticleBox>
+            <ArticleBox sx={{background: 'radial-gradient(circle, #000000, #0e0006, #130012, #11001c, #010127)' }}>
                 <AnnounceText >
                     Subscribe to my official Medium Page!
                 </AnnounceText>

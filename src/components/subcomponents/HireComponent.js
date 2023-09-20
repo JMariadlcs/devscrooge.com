@@ -9,8 +9,8 @@ const HireComponent = () => {
     const HireBox = styled(Box)(({ theme }) => ({
         alignItems: 'center',
         backgroundColor: 'secondary.main',
-        border: '1px solid rgba(255, 255, 255, 0.2)',
-        boxShadow: '0px 0px 20px 1px rgba(255, 255, 255, 0.2)',
+        border: '1px solid #6F005B',
+        boxShadow: '0px 0px 20px 1px #6F005B',
         flexGrow: '0',
         flexDirection: 'column',
         margin: '10px',
@@ -44,7 +44,7 @@ const HireComponent = () => {
                     <Button variant="contained" href={"https://docs.google.com/forms/d/e/1FAIpQLSees9RL4-zXmWkWsY_tZ4-52JL1AoGjYH_1ajjuizNDV5PFdg/viewform?usp=sf_link"} target="_blank" s sx={{
                         borderRadius: 2,
                         border: '1px solid #6F005B',
-                        boxShadow: '0px 0px 20px 1px rgba(255, 255, 255, 0.2)',
+                        boxShadow: '0px 0px 20px 1px #6F005B',
                         margin: '0 5px 0 0'
                     }}>
                         Hire
@@ -52,7 +52,7 @@ const HireComponent = () => {
                     <Button variant="contained" href={"https://twitter.com/devScrooge"} target="_blank" s sx={{
                         borderRadius: 2,
                         border: '1px solid #6F005B',
-                        boxShadow: '0px 0px 20px 1px rgba(255, 255, 255, 0.2)',
+                        boxShadow: '0px 0px 20px 1px #6F005B',
                     }}>
                         DM
                     </Button>
@@ -86,7 +86,7 @@ const HireComponent = () => {
                     <Button variant="contained" href={"https://docs.google.com/forms/d/e/1FAIpQLSees9RL4-zXmWkWsY_tZ4-52JL1AoGjYH_1ajjuizNDV5PFdg/viewform?usp=sf_link"} target="_blank" s sx={{
                         borderRadius: 2,
                         border: '1px solid #6F005B',
-                        boxShadow: '0px 0px 20px 1px rgba(255, 255, 255, 0.2)',
+                        boxShadow: '0px 0px 20px 1px #6F005B',
                         margin: '0 5px 0 0'
                     }}>
                         Hire
@@ -94,7 +94,7 @@ const HireComponent = () => {
                     <Button variant="contained" href={"https://twitter.com/devScrooge"} target="_blank" s sx={{
                         borderRadius: 2,
                         border: '1px solid #6F005B',
-                        boxShadow: '0px 0px 20px 1px rgba(255, 255, 255, 0.2)',
+                        boxShadow: '0px 0px 20px 1px #6F005B',
                     }}>
                         DM
                     </Button>
@@ -131,7 +131,7 @@ const HireComponent = () => {
                     <Button variant="contained" href={"https://docs.google.com/forms/d/e/1FAIpQLSees9RL4-zXmWkWsY_tZ4-52JL1AoGjYH_1ajjuizNDV5PFdg/viewform?usp=sf_link"} target="_blank" s sx={{
                         borderRadius: 2,
                         border: '1px solid #6F005B',
-                        boxShadow: '0px 0px 20px 1px rgba(255, 255, 255, 0.2)',
+                        boxShadow: '0px 0px 20px 1px #6F005B',
                         margin: '0 5px 0 0'
                     }}>
                         Hire
@@ -139,7 +139,7 @@ const HireComponent = () => {
                     <Button variant="contained" href={"https://twitter.com/devScrooge"} target="_blank" s sx={{
                         borderRadius: 2,
                         border: '1px solid #6F005B',
-                        boxShadow: '0px 0px 20px 1px rgba(255, 255, 255, 0.2)',
+                        boxShadow: '0px 0px 20px 1px #6F005B',
                     }}>
                         DM
                     </Button>
