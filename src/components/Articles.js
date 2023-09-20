@@ -11,12 +11,14 @@ const ArticlesPage = () => {
     return (
         <Box className="home-box" sx={{ background: 'radial-gradient(circle, #000000, #0e0006, #130012, #11001c, #010127)', padding: !isMobile ? '0 50px 10px 50px' : '0 0px 10px 0px'  }} margin="-25px 0 0 0" padding='0 0px 10px 0px' >
             <ArticlesTittle />
-            <Box
+            <Box className="articles-container"
                 sx={{
                     display: 'flex',
-                    flexDirection: isMobile ? 'column' : 'row', // Use column on mobile, row on larger screens
-                    width: !isMobile ? '70%' : 'auto',
-                    justifyContent: 'space-between',
+                    flexDirection: isMobile ? 'column' : 'row', 
+                    width: !isMobile ? '100%' : 'auto',
+                    overflow: 'hidden',
+                    flexWrap: !isMobile ? 'wrap': 'auto', // Allow items to wrap to the next row
+                    maxWidth: '100%', // Set a maximum width to force items to wrap
                 }}
             >
                 <ArticleDeepLink />

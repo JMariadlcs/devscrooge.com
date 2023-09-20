@@ -1,9 +1,10 @@
-import { Box, Typography, styled, Button } from "@mui/material"
+import { Box, Typography, styled, Button, useMediaQuery, useTheme } from "@mui/material"
 import { StyledBox } from "../Custom/CustomComponents";
 import { BannerMedium } from "../Utils/MediumBanner";
 
 const ArticleCard = (article) => {
-    console.log("Articles", article.Tittle)
+    const theme = useTheme();
+    const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
     const ArticleBox = styled(Box)(({ theme }) => ({
         alignItems: 'center',
         backgroundColor: 'secondary.main',
@@ -11,15 +12,15 @@ const ArticleCard = (article) => {
         boxShadow: '0px 0px 20px 1px #6F005B',
         flexGrow: '0',
         flexDirection: 'column',
-        margin: '10px',
+        margin: !isMobile ? '20px' : '0px',
         height: '100%',
         padding: '0 10px 0 10px',
-        width: '100%',
+        width: '300px',
         borderRadius: 10,
         [theme.breakpoints.down('lg')]: {
             flexDirection: 'column',
             height: 'fit-content',
-            margin: '50px 0px 10px 0px',
+            margin: '0',
             padding: '0 20px 20px 20px',
             maxWidth: '80%',
             width: '500px',

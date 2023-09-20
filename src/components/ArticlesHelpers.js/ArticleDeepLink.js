@@ -12,9 +12,9 @@ const ArticleDeepLink = () => {
         flexGrow: '0',
         flexDirection: 'column',
         margin: '10px',
-        height: '100%',
+        height: '300px',
         padding: '0 10px 0 10px',
-        width: '100%',
+        width: '300px',
         borderRadius: 10,
         [theme.breakpoints.down('lg')]: {
             flexDirection: 'column',
