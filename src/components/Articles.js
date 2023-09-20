@@ -17,8 +17,9 @@ const ArticlesPage = () => {
                     flexDirection: isMobile ? 'column' : 'row', 
                     width: !isMobile ? '100%' : 'auto',
                     overflow: 'hidden',
-                    flexWrap: !isMobile ? 'wrap': 'auto', // Allow items to wrap to the next row
-                    maxWidth: '100%', // Set a maximum width to force items to wrap
+                    flexWrap: !isMobile ? 'wrap': 'auto', 
+                    maxWidth: '100%', 
+                    justifyContent: 'center',
                 }}
             >
                 <ArticleDeepLink />

@@ -12,7 +12,7 @@ const ArticleDeepLink = () => {
         flexGrow: '0',
         flexDirection: 'column',
         margin: '10px',
-        height: '300px',
+        height: '100%',
         padding: '0 10px 0 10px',
         width: '300px',
         borderRadius: 10,
