@@ -30,7 +30,7 @@ const LearningResourcesComponent = () => {
             width: '500px',
         },
         '&:hover': {
-            boxShadow: '0px 0px 30px 3px rgba(255, 255, 255, 0.3)',
+            boxShadow: '0px 0px 30px 3px #6F005B',
             transform: 'translateY(-5px)',
         },
     }));
