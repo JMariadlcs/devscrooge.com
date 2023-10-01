@@ -103,7 +103,7 @@ const ProductsPage = () => {
                                     <p style={{ fontWeight: 'bold' }}>First step:</p>
                                     <p>Send a tx with the price in stable coin to '0xd03D08426F9ED35C65236F8F54C332b5D14f187A'</p>
                                     <p style={{ fontWeight: 'bold' }}>Second step:</p>
-                                    <p>Send link to polyscan/fantomscan tx, 'https://polyscan.io/tx/xxxx' to '0xdevscrooge@gmail.com'</p>
+                                    <p>Send link to polyscan/fantomscan tx, 'https://polyscan.io/tx/xxxx' to '0xjmariadelacruz@gmail.com'</p>
                                     <p>You payment will be verified and you will receive a link to the product in 1-2 days.</p>
                                 </DialogContent>
                                 <DialogActions>

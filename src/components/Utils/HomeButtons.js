@@ -18,7 +18,7 @@ const whiteButtonStyle = {
 };
 
 const HomeButtons = () => {
-    const email = '0xdevscrooge@gmail.com';
+    const email = '0xjmariadelacruz@gmail.com';
 
     return (
         <Box sx={{ display: 'flex', justifyContent: 'center' }}>

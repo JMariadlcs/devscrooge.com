@@ -53,13 +53,13 @@ const ContactPage = () => {
                         You can contact me on Twitter:
                     </Typography>
                     <Link
-                        href="https://twitter.com/devScrooge"
+                        href="https://twitter.com/0xjmaria"
                         target="_blank"
                         rel="noopener"
                         underline="hover"
                         sx={{ color: '#c9c7c7' }}
                     >
-                        @devScrooge
+                        @0xjmaria
                     </Link>
                 </Box>
                 <Box sx={{ display: 'flex', alignItems: 'center', mt: 3 }}>
@@ -71,11 +71,11 @@ const ContactPage = () => {
                         You can send me an email:
                     </Typography>
                     <Link
-                        href="mailto:0xdevscrooge@gmail.com"
+                        href="mailto:0xjmariadelacruz@gmail.com"
                         underline="hover"
                         sx={{ color: '#c9c7c7' }}
                     >
-                        0xdevscrooge@gmail.com
+                        0xjmariadelacruz@gmail.com
                     </Link>
                 </Box>
                 <Button
@@ -88,7 +88,7 @@ const ContactPage = () => {
                         borderRadius: '20px',
                         margin: '30px'
                     }}
-                    href="mailto:0xdevscrooge@gmail.com"
+                    href="mailto:0xjmariadelacruz@gmail.com"
                 >
                     Send message
                 </Button>

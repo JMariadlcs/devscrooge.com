@@ -32,7 +32,7 @@ const FooterBar = () => {
                 />
                 <Mail
                     sx={{ cursor: 'pointer', color: 'white' }}
-                    onClick={() => window.open('mailto:0xdevscrooge@gmail.com')}
+                    onClick={() => window.open('mailto:0xjmariadelacruz@gmail.com')}
                 />
             </Box>
         </Box>

@@ -11,10 +11,10 @@ const Navbar = () => {
         <AppBar position="sticky" sx={{ background: 'radial-gradient(circle, #000000, #0f0109, #140415, #130920, #03102c)' }}>
             <StyledToolbar>
                 <Button href="/" variant="h6" sx={{ display: { xs: "none", sm: "block" }, flexDirection: 'row', fontWeight: 'bold' }}>
-                    @devScrooge
+                    @0xjmaria
                 </Button>
                 <Button href="/" sx={{ display: { xs: "block", sm: "none" }, fontSize: 13, fontWeight: 'bold', color: "white" }}>
-                    @devScrooge
+                    @0xjmaria
                 </Button>
                 <Typography variant="h6" sx={{ display: { xs: "flex", sm: "none", md: "none", lg: "none", xl: "none" }, color: "secondary.main", fontSize: 15 }} margin="0 10px 0 0"
                     onClick={(e) => setOpen(true)}
