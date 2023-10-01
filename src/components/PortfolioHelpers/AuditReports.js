@@ -64,6 +64,12 @@ const Audit11 = {
     "Link": "https://github.com/UNSNARL/audit-reports/blob/main/Dropzone_Komet_Security_Assessment.pdf"
 }
 
+const Audit12 = {
+    "Tittle": "Poolshark",
+    "Text": "Limit Pools",
+    "Link": "https://github.com/poolshark-protocol/limit/blob/master/audits/Guardian_Audits_Poolshark_Limit.pdf"
+}
 
 
-export const audits = [Audit1, Audit2, Audit3, Audit4, Audit5, Audit6, Audit7, Audit8, Audit9, Audit10, Audit11]
+
+export const audits = [Audit1, Audit2, Audit3, Audit4, Audit5, Audit6, Audit7, Audit8, Audit9, Audit10, Audit11, Audit12]
