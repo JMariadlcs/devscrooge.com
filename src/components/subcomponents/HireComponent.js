@@ -49,7 +49,7 @@ const HireComponent = () => {
                     }}>
                         Hire
                     </Button>
-                    <Button variant="contained" href={"https://twitter.com/devScrooge"} target="_blank" s sx={{
+                    <Button variant="contained" href={"https://twitter.com/0xjmaria"} target="_blank" s sx={{
                         borderRadius: 2,
                         border: '1px solid #6F005B',
                         boxShadow: '0px 0px 20px 1px #6F005B',
@@ -91,7 +91,7 @@ const HireComponent = () => {
                     }}>
                         Hire
                     </Button>
-                    <Button variant="contained" href={"https://twitter.com/devScrooge"} target="_blank" s sx={{
+                    <Button variant="contained" href={"https://twitter.com/0xjmaria"} target="_blank" s sx={{
                         borderRadius: 2,
                         border: '1px solid #6F005B',
                         boxShadow: '0px 0px 20px 1px #6F005B',
@@ -136,7 +136,7 @@ const HireComponent = () => {
                     }}>
                         Hire
                     </Button>
-                    <Button variant="contained" href={"https://twitter.com/devScrooge"} target="_blank" s sx={{
+                    <Button variant="contained" href={"https://twitter.com/0xjmaria"} target="_blank" s sx={{
                         borderRadius: 2,
                         border: '1px solid #6F005B',
                         boxShadow: '0px 0px 20px 1px #6F005B',

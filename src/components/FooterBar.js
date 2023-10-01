@@ -24,7 +24,7 @@ const FooterBar = () => {
                 />
                 <Twitter
                     sx={{ mr: 1, cursor: 'pointer', color: 'white' }}
-                    onClick={() => window.open('https://twitter.com/devscrooge')}
+                    onClick={() => window.open('https://twitter.com/0xjmaria')}
                 />
                 <GitHub
                     sx={{ mr: 1, cursor: 'pointer', color: 'white' }}
