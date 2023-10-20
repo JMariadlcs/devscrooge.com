@@ -15,7 +15,7 @@ const Home = () => {
                 <CircularImage src="../assets/scrooge.png" sx={{ width: 20, height: 20, marginRight: '2rem', marginLeft: '2rem' }} padding="0 50px 0 0" />
                 <Box className="JMariaInfoText" sx={{ padding: '50px ' }}>
                     <Typography color="textPrimary">Blockchain Security Researcher and Engineer</Typography>
-                    <Typography color='white' fontSize='40px' fontWeight='bold' margin='0 0 20px 0'>Jose María De la Cruz</Typography>
+                    <Typography color='white' fontSize='40px' fontWeight='bold' margin='0 0 20px 0'>Jose María De la Cruz - (@0xjmaria) </Typography>
                     <Typography color="textPrimary" margin='0 0 20px 0' fontSize='15px'>
                         Blockchain protocols are changing the world by improving people's lives by offering transparency, security and decentralized transactions. All protocols are born from an idea and we all have ideas, but without the technical knowledge it is not possible to achieve the most important thing, to implement them.
                     </Typography>
@@ -32,7 +32,7 @@ const Home = () => {
                 <CircularImage src="../assets/scrooge.png" sx={{ width: 100, height: 100, marginRight: '2rem' }} padding="0 50px 0 0" />
                 <Box className="JMariaInfoText" padding="0 0 0 50px">
                     <Typography color="textPrimary">Blockchain Security Researcher and Engineer</Typography>
-                    <Typography color='white' fontSize='40px' fontWeight='bold' margin='0 0 20px 0'>Jose María De la Cruz</Typography>
+                    <Typography color='white' fontSize='40px' fontWeight='bold' margin='0 0 20px 0'>Jose María De la Cruz - (@0xjmaria)</Typography>
                     <Typography color="textPrimary" margin='0 0 20px 0' fontSize='15px'>
                         Blockchain protocols are changing the world by improving people's lives by offering transparency, security and decentralized transactions. All protocols are born from an idea and we all have ideas, but without the technical knowledge it is not possible to achieve the most important thing, to implement them.
                     </Typography>

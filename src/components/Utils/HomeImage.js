@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { makeStyles } from '@mui/styles';
 import { Avatar, styled } from "@mui/material";
 
@@ -35,14 +35,11 @@ const CircularImage = ({ src }) => {
 
     const classes = useStyles();
 
-    const image1 = require("../../assets/scrooge2.png")
-    const image2 = require("../../assets/photo.png")
-    const [image, setImage] = useState(image1)
+   // const image1 = require("../../assets/scrooge2.png")
+    const image = require("../../assets/profile-photo.jpeg")
 
     return (
-        <AvatarCustom alt="Image" src={image} className={classes.avatar}
-            onMouseEnter={() => setImage(image2)}
-            onMouseLeave={() => setImage(image1)} />
+        <AvatarCustom alt="Image" src={image} className={classes.avatar}/>
     );
 };
 
