@@ -65,7 +65,7 @@ const Navbar = () => {
                     }}>
                         Articles
                     </Link>
-                    <Link href="/deepdives" color={location.pathname === '/deepdives' ? 'textSecondary' : 'secondary.main'} underline='none' sx={{
+                    {/*<Link href="/deepdives" color={location.pathname === '/deepdives' ? 'textSecondary' : 'secondary.main'} underline='none' sx={{
                         display: {
                             xs: "none", sm: "flex", md: "flex", lg: "flex", xl: "flex", '&:hover': {
                                 textShadow: "#FC0 1px 0 10px",
@@ -74,7 +74,7 @@ const Navbar = () => {
                         }, fontSize: 20, fontWeight: 'bold'
                     }}>
                         Deep dives
-                    </Link>
+                    </Link>*/}
                     {/*<Link href="/threads" color={location.pathname === '/threads' ? 'textSecondary' : 'secondary.main'} underline='none' sx={{ display: { xs: "none", sm: "flex", md: "flex", lg: "flex", xl: "flex" }, fontSize: 20 }}>
                         Threads
                     </Link>*/}
@@ -132,13 +132,13 @@ const Navbar = () => {
                     padding: "0 0 0 10px",
                     margin: "0 8px 8px 0"
                 }}>Articles</Link>
-                <Link href="/deepdives" underline='none' sx={{
+                {/*<Link href="/deepdives" underline='none' sx={{
                     display: "block",
                     color: "black",
                     padding: "0 0 0 10px",
                     margin: "0 8px 8px 0"
                 }}>Deep dives</Link>
-                {/* <Link href="/threads" underline='none' sx={{
+                 <Link href="/threads" underline='none' sx={{
                     display: "block",
                     color: "black",
                     padding: "0 0 0 10px",

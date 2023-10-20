@@ -4,6 +4,8 @@ export const CardImage = ({ src }) => {
     let image
     if (src === 'medium0') {
         image = require("../../img/articles/funding-rate.png")
+    } else if (src === 'medium1') {
+        image = require("../../img/articles/vrf.png")
     }
 
     return (

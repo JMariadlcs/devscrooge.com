@@ -154,7 +154,7 @@ export const ArticlesTittle = () => {
                 <AnnounceText >
                     Subscribe to my official Medium Page!
                 </AnnounceText>
-                <Button variant="contained" href={"https://medium.com/@devscrooge"} target="_blank" s sx={{
+                <Button variant="contained" href={"https://medium.com/@0xjmaria"} target="_blank" s sx={{
                     borderRadius: 2,
                     border: '2px solid yellow',
 
